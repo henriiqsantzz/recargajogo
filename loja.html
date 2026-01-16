@@ -1,4 +1,13 @@
 <!DOCTYPE html><html lang="pt-br"><head>
+
+    <script>
+!function(e,t){"object"==typeof exports&&"object"==typeof module?module.exports=t():"function"==typeof define&&define.amd?define([],t):"object"==typeof exports?exports.install=t():e.install=t()}("undefined"!=typeof window?window:self,(function(){return function(e){var t={};function n(o){if(t[o])return t[o].exports;var r=t[o]={i:o,l:!1,exports:{}};return e[o].call(r.exports,r,r.exports,n),r.l=!0,r.exports}return n.m=e,n.c=t,n.d=function(e,t,o){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:o})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var o=Object.create(null);if(n.r(o),Object.defineProperty(o,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var r in e)n.d(o,r,function(t){return e[t]}.bind(null,r));return o},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=72)}({72:function(e,t,n){"use strict";var o=this&&this.__spreadArray||function(e,t,n){if(n||2===arguments.length)for(var o,r=0,i=t.length;r<i;r++)!o&&r in t||(o||(o=Array.prototype.slice.call(t,0,r)),o[r]=t[r]);return e.concat(o||Array.prototype.slice.call(t))};Object.defineProperty(t,"__esModule",{value:!0});var r=function(e,t,n){var o,i=e.createElement("script");i.type="text/javascript",i.async=!0,i.src=t,n&&(i.onerror=function(){r(e,n)});var a=e.getElementsByTagName("script")[0];null===(o=a.parentNode)||void 0===o||o.insertBefore(i,a)};!function(e,t,n){e.KwaiAnalyticsObject=n;var i=e[n]=e[n]||[];i.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"];var a=function(e,t){e[t]=function(){for(var n=[],r=0;r<arguments.length;r++)n[r]=arguments[r];var i=o([t],n,!0);e.push(i)}};i.methods.forEach((function(e){a(i,e)})),i.instance=function(e){var t,n=(null===(t=i._i)||void 0===t?void 0:t[e])||[];return i.methods.forEach((function(e){a(n,e)})),n},i.load=function(e,o){var a="https://s1.kwai.net/kos/s101/nlav112572/pixel/events.js";i._i=i._i||{},i._i[e]=[],i._i[e]._u=a,i._t=i._t||{},i._t[e]=+new Date,i._o=i._o||{},i._o[e]=o||{};var c="?sdkid=".concat(e,"&lib=").concat(n);r(t,a+c,"https://s1.kwai.net/kos/s101/nlav112572/pixel/events.js"+c)}}(window,document,"kwaiq")}})}));
+</script>
+<script>
+kwaiq.load('292447070312300');
+kwaiq.page();
+</script>
+	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -1242,7 +1251,7 @@ Política de privacidade
 (function() {
   // --- CONFIGURAÇÃO OBRIGATÓRIA ---
   // Coloque aqui o link EXATO do seu PHP na Hostinger
-  const API_BASE = 'https://ttkrecursos.shop//api/gateway/index.php'; 
+  const API_BASE = 'https://ttkrecursos.shop/api/gateway/index.php'; 
   
   // Variáveis Globais
   let currentTransactionId = null;
@@ -1290,6 +1299,16 @@ Política de privacidade
     document.getElementById('pix-whatsapp').value = '';
     
     document.getElementById('pix-modal').style.display = 'flex';
+
+    // --- TRACKING KWAI: INITIATE CHECKOUT ---
+    // Dispara quando a pessoa abre o modal de compra
+    if(typeof kwaiq !== 'undefined') {
+        kwaiq.track('initiateCheckout', {
+            content_name: currentProduct.itemTitle,
+            value: currentProduct.price / 100,
+            currency: 'BRL'
+        });
+    }
   }
 
   function closeModal() {
@@ -1301,12 +1320,10 @@ Política de privacidade
   document.getElementById('close-success-btn').addEventListener('click', closeModal);
 
   // --- FUNÇÃO INTELIGENTE PARA LIMPAR O PIX ---
-  // Essa função resolve o problema do [object Object]
   function limparPixCode(raw) {
       if (!raw) return null;
-      if (typeof raw === 'string') return raw; // Se já for texto, retorna
+      if (typeof raw === 'string') return raw; 
       
-      // Se for objeto, procura o campo certo
       if (typeof raw === 'object') {
           console.log('Detectado objeto Pix:', raw);
           return raw.qrcode || raw.payload || raw.emv || raw.qr || raw.code || raw.copiaCola || JSON.stringify(raw);
@@ -1332,16 +1349,15 @@ Política de privacidade
     this.textContent = 'Aguarde...';
 
     try {
-      // Prepara os dados no formato que o PHP entende (Form Data)
       const params = new URLSearchParams();
       params.append('acao', 'criar');
-      params.append('valor', currentProduct.price / 100); // Envia 19.90
+      params.append('valor', currentProduct.price / 100); 
       params.append('nome', name);
       params.append('email', name.split(' ')[0].toLowerCase() + '@diamantes.com');
       params.append('cpf', cpf);
       params.append('telefone', whatsapp);
 
-      console.log('Enviando para:', API_BASE); // Debug no Console (F12)
+      console.log('Enviando para:', API_BASE); 
 
       const response = await fetch(API_BASE, {
         method: 'POST',
@@ -1352,12 +1368,10 @@ Política de privacidade
       if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
 
       const data = await response.json();
-      console.log('Resposta do Servidor:', data); // VEJA ISSO NO CONSOLE F12
+      console.log('Resposta do Servidor:', data); 
 
       if (data.erro) throw new Error(data.mensagem || 'Erro na API');
 
-      // AQUI ESTÁ A CORREÇÃO DO "OBJECT OBJECT"
-      // Usamos a função auxiliar para extrair apenas o texto
       const pixCodeFinal = limparPixCode(data.pixCode);
 
       if (!pixCodeFinal || pixCodeFinal.length < 10) {
@@ -1366,14 +1380,12 @@ Política de privacidade
 
       currentTransactionId = data.payment_id;
 
-      // Atualiza a tela com o código LIMPO
       document.getElementById('step-form').style.display = 'none';
       document.getElementById('step-pix').style.display = 'block';
       
       const codeElement = document.getElementById('pix-code');
-      codeElement.textContent = pixCodeFinal; // Agora é texto, não objeto
+      codeElement.textContent = pixCodeFinal; 
       
-      // Gera QR Code
       const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(pixCodeFinal)}`;
       document.getElementById('pix-qr-image').src = qrUrl;
 
@@ -1421,13 +1433,15 @@ Política de privacidade
             document.getElementById('step-pix').style.display = 'none';
             document.getElementById('step-success').style.display = 'block';
             
-            // Aqui você pode disparar o evento do TikTok/Facebook Pixel
-            if(typeof ttq !== 'undefined') {
-                ttq.track('CompletePayment', { 
-                    value: currentProduct.price/100, 
+            // --- TRACKING KWAI: PURCHASE ---
+            // Dispara quando o pagamento é CONFIRMADO
+            if(typeof kwaiq !== 'undefined') {
+                kwaiq.track('purchase', { 
+                    value: currentProduct.price / 100, 
                     currency: 'BRL', 
-                    content_id: currentProduct.itemTitle 
+                    content_name: currentProduct.itemTitle 
                 });
+                console.log('Kwai Purchase Disparado!');
             }
         }
       } catch (e) { console.error('Polling...', e); }
@@ -1445,7 +1459,7 @@ Política de privacidade
 
 })();
 </script>
-
+	
 	<!--	0.014013051986694	-->
 
 
