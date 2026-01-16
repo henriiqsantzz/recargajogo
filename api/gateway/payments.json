@@ -1,0 +1,2753 @@
+{
+    "TX17654841259592": {
+        "local_id": "TX17654841259592",
+        "gateway_id": "0833223c-7cf1-453a-ace7-8f2cc65d6808",
+        "txid": "T93ff207d6ad5",
+        "pixCode": {
+            "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/8be9852c-edbe-4a36-97b1-0a984c34827d5204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***630445A2",
+            "expirationDate": "2025-12-11T17:35:26-03:00",
+            "end2EndId": null,
+            "receiptUrl": null
+        },
+        "valor": "36.72",
+        "nome": "Roberto Nascimento Martins",
+        "gateway_response": {
+            "id": "0833223c-7cf1-453a-ace7-8f2cc65d6808",
+            "amount": 3672,
+            "paidAmount": 0,
+            "refundedAmount": 0,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": {
+                "local_id": "TX17654841259592",
+                "txid": "T93ff207d6ad5",
+                "up": "",
+                "utm": "utm_source%3Ddirect"
+            },
+            "traceable": true,
+            "createdAt": "2025-12-11T17:15:26-03:00",
+            "updatedAt": "2025-12-11T17:15:26-03:00",
+            "paidAt": null,
+            "ip": "",
+            "authorizationCode": null,
+            "basePrice": null,
+            "interestRate": null,
+            "origin": null,
+            "customer": {
+                "id": "0dd30ff1-412e-423f-85e5-f316ad63a58c",
+                "name": "Roberto Nascimento Martins",
+                "email": "robertonascimentomartins2105@outlook.com",
+                "phone": "40940634113",
+                "birthdate": null,
+                "createdAt": "2025-12-11T17:15:26.051015",
+                "document": {
+                    "number": "28528129918",
+                    "type": "cpf"
+                },
+                "address": null
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/8be9852c-edbe-4a36-97b1-0a984c34827d5204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***630445A2",
+                "expirationDate": "2025-12-11T17:35:26-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "fee": 0,
+                "address": null
+            },
+            "refusedReason": {
+                "acquirerCode": null,
+                "description": "",
+                "antifraud": false
+            },
+            "items": [
+                {
+                    "title": "Compra",
+                    "unitPrice": 3672,
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 3375,
+                    "chargeProcessingFee": true
+                }
+            ],
+            "refunds": [],
+            "delivery": null,
+            "payer": null,
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 297,
+                "netAmount": 3375
+            },
+            "fingerPrint": null,
+            "paymentlink_id": null
+        },
+        "status": "pending",
+        "created_at": "2025-12-11T20:15:29+00:00",
+        "gateway_response_verify": {
+            "id": "0833223c-7cf1-453a-ace7-8f2cc65d6808",
+            "amount": 3672,
+            "refundedAmount": null,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": "{\"local_id\":\"TX17654841259592\",\"txid\":\"T93ff207d6ad5\",\"up\":\"\",\"utm\":\"utm_source%3Ddirect\"}",
+            "traceable": true,
+            "createdAt": "2025-12-11T17:15:26-03:00",
+            "updatedAt": "2025-12-11T17:15:26-03:00",
+            "paidAt": null,
+            "ip": null,
+            "externalRef": "",
+            "delivery": {
+                "status": null,
+                "trackingCode": null
+            },
+            "customer": {
+                "id": "0dd30ff1-412e-423f-85e5-f316ad63a58c",
+                "name": "Roberto Nascimento Martins",
+                "email": "robertonascimentomartins2105@outlook.com",
+                "phone": "40940634113",
+                "birthdate": null,
+                "createdAt": "2025-12-11T17:15:26.051015",
+                "document": {
+                    "number": "28528129918",
+                    "type": "CPF"
+                },
+                "address": {
+                    "street": "Avenida Gael",
+                    "streetNumber": "92304",
+                    "complement": "Apto. 162",
+                    "zipCode": "10703-922",
+                    "neighborhood": "Vila Mariana",
+                    "city": "Raul de Nossa Senhora",
+                    "state": "PA",
+                    "country": "BR"
+                }
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/8be9852c-edbe-4a36-97b1-0a984c34827d5204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***630445A2",
+                "expirationDate": "2025-12-11T17:35:26-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "street": "Avenida Gael",
+                "streetNumber": "92304",
+                "complement": "Apto. 162",
+                "zipCode": "10703-922",
+                "neighborhood": "Vila Mariana",
+                "city": "Raul de Nossa Senhora",
+                "state": "PA",
+                "country": "BR"
+            },
+            "refusedReason": "",
+            "items": [
+                {
+                    "title": "Compra",
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 3375
+                }
+            ],
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 297,
+                "netAmount": 3375
+            }
+        },
+        "updated_at": "2025-12-11T20:15:30+00:00"
+    },
+    "TX17654843164235": {
+        "local_id": "TX17654843164235",
+        "gateway_id": "529ff971-32f3-4204-b849-ffef8ae4c43b",
+        "txid": "T8fe96591dd3b",
+        "pixCode": {
+            "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/da7d60de-5d20-4c56-a09e-f74f93e663ae5204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304B779",
+            "expirationDate": "2025-12-11T17:38:37-03:00",
+            "end2EndId": null,
+            "receiptUrl": null
+        },
+        "valor": "36.72",
+        "nome": "Pedro Ferreira Dias",
+        "gateway_response": {
+            "id": "529ff971-32f3-4204-b849-ffef8ae4c43b",
+            "amount": 3672,
+            "paidAmount": 0,
+            "refundedAmount": 0,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": {
+                "local_id": "TX17654843164235",
+                "txid": "T8fe96591dd3b",
+                "up": "",
+                "utm": "utm_source%3Ddirect"
+            },
+            "traceable": true,
+            "createdAt": "2025-12-11T17:18:37-03:00",
+            "updatedAt": "2025-12-11T17:18:37-03:00",
+            "paidAt": null,
+            "ip": "",
+            "authorizationCode": null,
+            "basePrice": null,
+            "interestRate": null,
+            "origin": null,
+            "customer": {
+                "id": "fa84056a-b8d3-46f1-9c3a-29f6a5b8a5ee",
+                "name": "Pedro Ferreira Dias",
+                "email": "pedroferreiradias2807@icloud.com",
+                "phone": "56935707082",
+                "birthdate": null,
+                "createdAt": "2025-12-11T17:18:37.264021",
+                "document": {
+                    "number": "94844471392",
+                    "type": "cpf"
+                },
+                "address": null
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/da7d60de-5d20-4c56-a09e-f74f93e663ae5204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304B779",
+                "expirationDate": "2025-12-11T17:38:37-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "fee": 0,
+                "address": null
+            },
+            "refusedReason": {
+                "acquirerCode": null,
+                "description": "",
+                "antifraud": false
+            },
+            "items": [
+                {
+                    "title": "Compra",
+                    "unitPrice": 3672,
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 3375,
+                    "chargeProcessingFee": true
+                }
+            ],
+            "refunds": [],
+            "delivery": null,
+            "payer": null,
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 297,
+                "netAmount": 3375
+            },
+            "fingerPrint": null,
+            "paymentlink_id": null
+        },
+        "status": "pending",
+        "created_at": "2025-12-11T20:18:40+00:00",
+        "gateway_response_verify": {
+            "id": "529ff971-32f3-4204-b849-ffef8ae4c43b",
+            "amount": 3672,
+            "refundedAmount": null,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": "{\"local_id\":\"TX17654843164235\",\"txid\":\"T8fe96591dd3b\",\"up\":\"\",\"utm\":\"utm_source%3Ddirect\"}",
+            "traceable": true,
+            "createdAt": "2025-12-11T17:18:37-03:00",
+            "updatedAt": "2025-12-11T17:18:37-03:00",
+            "paidAt": null,
+            "ip": null,
+            "externalRef": "",
+            "delivery": {
+                "status": null,
+                "trackingCode": null
+            },
+            "customer": {
+                "id": "fa84056a-b8d3-46f1-9c3a-29f6a5b8a5ee",
+                "name": "Pedro Ferreira Dias",
+                "email": "pedroferreiradias2807@icloud.com",
+                "phone": "56935707082",
+                "birthdate": null,
+                "createdAt": "2025-12-11T17:18:37.264021",
+                "document": {
+                    "number": "94844471392",
+                    "type": "CPF"
+                },
+                "address": {
+                    "street": "Rodovia Reis",
+                    "streetNumber": "13264",
+                    "complement": "Lote 41",
+                    "zipCode": "62137-844",
+                    "neighborhood": "Jardim Paraíso",
+                    "city": "Aline de Nossa Senhora",
+                    "state": "CE",
+                    "country": "BR"
+                }
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/da7d60de-5d20-4c56-a09e-f74f93e663ae5204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304B779",
+                "expirationDate": "2025-12-11T17:38:37-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "street": "Rodovia Reis",
+                "streetNumber": "13264",
+                "complement": "Lote 41",
+                "zipCode": "62137-844",
+                "neighborhood": "Jardim Paraíso",
+                "city": "Aline de Nossa Senhora",
+                "state": "CE",
+                "country": "BR"
+            },
+            "refusedReason": "",
+            "items": [
+                {
+                    "title": "Compra",
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 3375
+                }
+            ],
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 297,
+                "netAmount": 3375
+            }
+        },
+        "updated_at": "2025-12-11T20:18:41+00:00"
+    },
+    "TX17654847121963": {
+        "local_id": "TX17654847121963",
+        "gateway_id": "e474a19e-874d-41ae-b377-59e74e3b7909",
+        "txid": "Tf52ab2e3d804",
+        "pixCode": {
+            "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/a1c07ac9-c71c-457d-a997-09f4e6a75e505204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***63042341",
+            "expirationDate": "2025-12-11T17:45:12-03:00",
+            "end2EndId": null,
+            "receiptUrl": null
+        },
+        "valor": "36.72",
+        "nome": "Sofia Vieira Castro",
+        "gateway_response": {
+            "id": "e474a19e-874d-41ae-b377-59e74e3b7909",
+            "amount": 3672,
+            "paidAmount": 0,
+            "refundedAmount": 0,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": {
+                "local_id": "TX17654847121963",
+                "txid": "Tf52ab2e3d804",
+                "up": "",
+                "utm": "utm_source%3Ddirect"
+            },
+            "traceable": true,
+            "createdAt": "2025-12-11T17:25:12-03:00",
+            "updatedAt": "2025-12-11T17:25:12-03:00",
+            "paidAt": null,
+            "ip": "",
+            "authorizationCode": null,
+            "basePrice": null,
+            "interestRate": null,
+            "origin": null,
+            "customer": {
+                "id": "112ff126-f1f8-45ca-a429-f159014fdc2c",
+                "name": "Sofia Vieira Castro",
+                "email": "sofiavieiracastro0102@icloud.com",
+                "phone": "16985923357",
+                "birthdate": null,
+                "createdAt": "2025-12-11T17:25:12.495096",
+                "document": {
+                    "number": "36353601042",
+                    "type": "cpf"
+                },
+                "address": null
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/a1c07ac9-c71c-457d-a997-09f4e6a75e505204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***63042341",
+                "expirationDate": "2025-12-11T17:45:12-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "fee": 0,
+                "address": null
+            },
+            "refusedReason": {
+                "acquirerCode": null,
+                "description": "",
+                "antifraud": false
+            },
+            "items": [
+                {
+                    "title": "Compra",
+                    "unitPrice": 3672,
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 3375,
+                    "chargeProcessingFee": true
+                }
+            ],
+            "refunds": [],
+            "delivery": null,
+            "payer": null,
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 297,
+                "netAmount": 3375
+            },
+            "fingerPrint": null,
+            "paymentlink_id": null
+        },
+        "status": "pending",
+        "created_at": "2025-12-11T20:25:20+00:00",
+        "gateway_response_verify": {
+            "id": "e474a19e-874d-41ae-b377-59e74e3b7909",
+            "amount": 3672,
+            "refundedAmount": null,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": "{\"local_id\":\"TX17654847121963\",\"txid\":\"Tf52ab2e3d804\",\"up\":\"\",\"utm\":\"utm_source%3Ddirect\"}",
+            "traceable": true,
+            "createdAt": "2025-12-11T17:25:12-03:00",
+            "updatedAt": "2025-12-11T17:25:12-03:00",
+            "paidAt": null,
+            "ip": null,
+            "externalRef": "",
+            "delivery": {
+                "status": null,
+                "trackingCode": null
+            },
+            "customer": {
+                "id": "112ff126-f1f8-45ca-a429-f159014fdc2c",
+                "name": "Sofia Vieira Castro",
+                "email": "sofiavieiracastro0102@icloud.com",
+                "phone": "16985923357",
+                "birthdate": null,
+                "createdAt": "2025-12-11T17:25:12.495096",
+                "document": {
+                    "number": "36353601042",
+                    "type": "CPF"
+                },
+                "address": {
+                    "street": "Marginal Rafaela",
+                    "streetNumber": "967",
+                    "complement": "Apto. 878",
+                    "zipCode": "85961-145",
+                    "neighborhood": "Jardim Bela Vista",
+                    "city": "Silva de Nossa Senhora",
+                    "state": "AC",
+                    "country": "BR"
+                }
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/a1c07ac9-c71c-457d-a997-09f4e6a75e505204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***63042341",
+                "expirationDate": "2025-12-11T17:45:12-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "street": "Marginal Rafaela",
+                "streetNumber": "967",
+                "complement": "Apto. 878",
+                "zipCode": "85961-145",
+                "neighborhood": "Jardim Bela Vista",
+                "city": "Silva de Nossa Senhora",
+                "state": "AC",
+                "country": "BR"
+            },
+            "refusedReason": "",
+            "items": [
+                {
+                    "title": "Compra",
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 3375
+                }
+            ],
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 297,
+                "netAmount": 3375
+            }
+        },
+        "updated_at": "2025-12-11T20:25:21+00:00"
+    },
+    "TX17654848419718": {
+        "local_id": "TX17654848419718",
+        "gateway_id": "b44730a7-7119-488f-a88b-c7dd29e88f3f",
+        "txid": "Tca9a9c61dadc",
+        "pixCode": {
+            "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/ca8bbc05-259c-4d3f-b000-273232a7c1355204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304D490",
+            "expirationDate": "2025-12-11T17:47:22-03:00",
+            "end2EndId": null,
+            "receiptUrl": null
+        },
+        "valor": "36.72",
+        "nome": "Eduardo Santos Nascimento",
+        "gateway_response": {
+            "id": "b44730a7-7119-488f-a88b-c7dd29e88f3f",
+            "amount": 3672,
+            "paidAmount": 0,
+            "refundedAmount": 0,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": {
+                "local_id": "TX17654848419718",
+                "txid": "Tca9a9c61dadc",
+                "up": "",
+                "utm": "utm_source%3Ddirect"
+            },
+            "traceable": true,
+            "createdAt": "2025-12-11T17:27:22-03:00",
+            "updatedAt": "2025-12-11T17:27:22-03:00",
+            "paidAt": null,
+            "ip": "",
+            "authorizationCode": null,
+            "basePrice": null,
+            "interestRate": null,
+            "origin": null,
+            "customer": {
+                "id": "95935165-4bed-41e4-a7e0-aa8609b43b4d",
+                "name": "Eduardo Santos Nascimento",
+                "email": "eduardosantosnascimento0609@hotmail.com",
+                "phone": "5810960868",
+                "birthdate": null,
+                "createdAt": "2025-12-11T17:27:21.926693",
+                "document": {
+                    "number": "75506499442",
+                    "type": "cpf"
+                },
+                "address": null
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/ca8bbc05-259c-4d3f-b000-273232a7c1355204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304D490",
+                "expirationDate": "2025-12-11T17:47:22-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "fee": 0,
+                "address": null
+            },
+            "refusedReason": {
+                "acquirerCode": null,
+                "description": "",
+                "antifraud": false
+            },
+            "items": [
+                {
+                    "title": "Compra",
+                    "unitPrice": 3672,
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 3375,
+                    "chargeProcessingFee": true
+                }
+            ],
+            "refunds": [],
+            "delivery": null,
+            "payer": null,
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 297,
+                "netAmount": 3375
+            },
+            "fingerPrint": null,
+            "paymentlink_id": null
+        },
+        "status": "pending",
+        "created_at": "2025-12-11T20:27:25+00:00",
+        "gateway_response_verify": {
+            "id": "b44730a7-7119-488f-a88b-c7dd29e88f3f",
+            "amount": 3672,
+            "refundedAmount": null,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": "{\"local_id\":\"TX17654848419718\",\"txid\":\"Tca9a9c61dadc\",\"up\":\"\",\"utm\":\"utm_source%3Ddirect\"}",
+            "traceable": true,
+            "createdAt": "2025-12-11T17:27:22-03:00",
+            "updatedAt": "2025-12-11T17:27:22-03:00",
+            "paidAt": null,
+            "ip": null,
+            "externalRef": "",
+            "delivery": {
+                "status": null,
+                "trackingCode": null
+            },
+            "customer": {
+                "id": "95935165-4bed-41e4-a7e0-aa8609b43b4d",
+                "name": "Eduardo Santos Nascimento",
+                "email": "eduardosantosnascimento0609@hotmail.com",
+                "phone": "5810960868",
+                "birthdate": null,
+                "createdAt": "2025-12-11T17:27:21.926693",
+                "document": {
+                    "number": "75506499442",
+                    "type": "CPF"
+                },
+                "address": {
+                    "street": "Marginal Elisa",
+                    "streetNumber": "422",
+                    "complement": "Sobrado 38",
+                    "zipCode": "11338-031",
+                    "neighborhood": "Jardim das Acácias",
+                    "city": "Sirineu do Descoberto",
+                    "state": "MS",
+                    "country": "BR"
+                }
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/ca8bbc05-259c-4d3f-b000-273232a7c1355204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304D490",
+                "expirationDate": "2025-12-11T17:47:22-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "street": "Marginal Elisa",
+                "streetNumber": "422",
+                "complement": "Sobrado 38",
+                "zipCode": "11338-031",
+                "neighborhood": "Jardim das Acácias",
+                "city": "Sirineu do Descoberto",
+                "state": "MS",
+                "country": "BR"
+            },
+            "refusedReason": "",
+            "items": [
+                {
+                    "title": "Compra",
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 3375
+                }
+            ],
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 297,
+                "netAmount": 3375
+            }
+        },
+        "updated_at": "2025-12-11T20:27:26+00:00"
+    },
+    "TX17654850139254": {
+        "local_id": "TX17654850139254",
+        "gateway_id": "a2dff94b-eb9c-4ef8-ba71-b8c583851019",
+        "txid": "T26b41717a205",
+        "pixCode": {
+            "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/5ad7e02a-1070-4387-9b28-b6f9bf14617a5204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304EA33",
+            "expirationDate": "2025-12-11T17:50:14-03:00",
+            "end2EndId": null,
+            "receiptUrl": null
+        },
+        "valor": "36.72",
+        "nome": "Ricardo Castro Gomes",
+        "gateway_response": {
+            "id": "a2dff94b-eb9c-4ef8-ba71-b8c583851019",
+            "amount": 3672,
+            "paidAmount": 0,
+            "refundedAmount": 0,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": {
+                "local_id": "TX17654850139254",
+                "txid": "T26b41717a205",
+                "up": "",
+                "utm": "utm_source%3Ddirect"
+            },
+            "traceable": true,
+            "createdAt": "2025-12-11T17:30:14-03:00",
+            "updatedAt": "2025-12-11T17:30:14-03:00",
+            "paidAt": null,
+            "ip": "",
+            "authorizationCode": null,
+            "basePrice": null,
+            "interestRate": null,
+            "origin": null,
+            "customer": {
+                "id": "1ada6214-7cd8-4a0d-b582-5d204970b907",
+                "name": "Ricardo Castro Gomes",
+                "email": "ricardocastrogomes0512@icloud.com",
+                "phone": "43930807488",
+                "birthdate": null,
+                "createdAt": "2025-12-11T17:30:14.163978",
+                "document": {
+                    "number": "80242111572",
+                    "type": "cpf"
+                },
+                "address": null
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/5ad7e02a-1070-4387-9b28-b6f9bf14617a5204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304EA33",
+                "expirationDate": "2025-12-11T17:50:14-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "fee": 0,
+                "address": null
+            },
+            "refusedReason": {
+                "acquirerCode": null,
+                "description": "",
+                "antifraud": false
+            },
+            "items": [
+                {
+                    "title": "Compra",
+                    "unitPrice": 3672,
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 3375,
+                    "chargeProcessingFee": true
+                }
+            ],
+            "refunds": [],
+            "delivery": null,
+            "payer": null,
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 297,
+                "netAmount": 3375
+            },
+            "fingerPrint": null,
+            "paymentlink_id": null
+        },
+        "status": "waiting_payment",
+        "created_at": "2025-12-11T20:30:17+00:00"
+    },
+    "TX17654850419538": {
+        "local_id": "TX17654850419538",
+        "gateway_id": "b05c7427-29b8-439b-9ef4-705429475bb2",
+        "txid": "Tdbc66dc1f29c",
+        "pixCode": {
+            "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/0de21618-f4d1-4b9e-980e-f50b0f6deb5e5204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304B0E4",
+            "expirationDate": "2025-12-11T17:50:41-03:00",
+            "end2EndId": null,
+            "receiptUrl": null
+        },
+        "valor": "36.72",
+        "nome": "Carlos Dias Oliveira",
+        "gateway_response": {
+            "id": "b05c7427-29b8-439b-9ef4-705429475bb2",
+            "amount": 3672,
+            "paidAmount": 0,
+            "refundedAmount": 0,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": {
+                "local_id": "TX17654850419538",
+                "txid": "Tdbc66dc1f29c",
+                "up": "",
+                "utm": "utm_source%3Ddirect"
+            },
+            "traceable": true,
+            "createdAt": "2025-12-11T17:30:41-03:00",
+            "updatedAt": "2025-12-11T17:30:41-03:00",
+            "paidAt": null,
+            "ip": "",
+            "authorizationCode": null,
+            "basePrice": null,
+            "interestRate": null,
+            "origin": null,
+            "customer": {
+                "id": "b3e465f2-1822-4e52-a487-29a430cfa72c",
+                "name": "Carlos Dias Oliveira",
+                "email": "carlosdiasoliveira0510@hotmail.com",
+                "phone": "3767577683",
+                "birthdate": null,
+                "createdAt": "2025-12-11T17:30:41.853739",
+                "document": {
+                    "number": "02038689512",
+                    "type": "cpf"
+                },
+                "address": null
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/0de21618-f4d1-4b9e-980e-f50b0f6deb5e5204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304B0E4",
+                "expirationDate": "2025-12-11T17:50:41-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "fee": 0,
+                "address": null
+            },
+            "refusedReason": {
+                "acquirerCode": null,
+                "description": "",
+                "antifraud": false
+            },
+            "items": [
+                {
+                    "title": "Compra",
+                    "unitPrice": 3672,
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 3375,
+                    "chargeProcessingFee": true
+                }
+            ],
+            "refunds": [],
+            "delivery": null,
+            "payer": null,
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 297,
+                "netAmount": 3375
+            },
+            "fingerPrint": null,
+            "paymentlink_id": null
+        },
+        "status": "pending",
+        "created_at": "2025-12-11T20:30:53+00:00",
+        "gateway_response_verify": {
+            "id": "b05c7427-29b8-439b-9ef4-705429475bb2",
+            "amount": 3672,
+            "refundedAmount": null,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": "{\"local_id\":\"TX17654850419538\",\"txid\":\"Tdbc66dc1f29c\",\"up\":\"\",\"utm\":\"utm_source%3Ddirect\"}",
+            "traceable": true,
+            "createdAt": "2025-12-11T17:30:41-03:00",
+            "updatedAt": "2025-12-11T17:30:41-03:00",
+            "paidAt": null,
+            "ip": null,
+            "externalRef": "",
+            "delivery": {
+                "status": null,
+                "trackingCode": null
+            },
+            "customer": {
+                "id": "b3e465f2-1822-4e52-a487-29a430cfa72c",
+                "name": "Carlos Dias Oliveira",
+                "email": "carlosdiasoliveira0510@hotmail.com",
+                "phone": "3767577683",
+                "birthdate": null,
+                "createdAt": "2025-12-11T17:30:41.853739",
+                "document": {
+                    "number": "02038689512",
+                    "type": "CPF"
+                },
+                "address": {
+                    "street": "Marginal Saraiva",
+                    "streetNumber": "46405",
+                    "complement": "Lote 59",
+                    "zipCode": "93153-030",
+                    "neighborhood": "Parque Vitória",
+                    "city": "Víctor do Sul",
+                    "state": "AL",
+                    "country": "BR"
+                }
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/0de21618-f4d1-4b9e-980e-f50b0f6deb5e5204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304B0E4",
+                "expirationDate": "2025-12-11T17:50:41-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "street": "Marginal Saraiva",
+                "streetNumber": "46405",
+                "complement": "Lote 59",
+                "zipCode": "93153-030",
+                "neighborhood": "Parque Vitória",
+                "city": "Víctor do Sul",
+                "state": "AL",
+                "country": "BR"
+            },
+            "refusedReason": "",
+            "items": [
+                {
+                    "title": "Compra",
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 3375
+                }
+            ],
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 297,
+                "netAmount": 3375
+            }
+        },
+        "updated_at": "2025-12-11T20:30:54+00:00"
+    },
+    "TX17654851528389": {
+        "local_id": "TX17654851528389",
+        "gateway_id": "812a9ab7-b329-49c0-a8ea-aac198aceea5",
+        "txid": "Te193dfb224a5",
+        "pixCode": {
+            "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/944b7c71-95f5-482f-b917-02d8488a77a35204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304E650",
+            "expirationDate": "2025-12-11T17:52:32-03:00",
+            "end2EndId": null,
+            "receiptUrl": null
+        },
+        "valor": "36.72",
+        "nome": "Felipe Oliveira Silva",
+        "gateway_response": {
+            "id": "812a9ab7-b329-49c0-a8ea-aac198aceea5",
+            "amount": 3672,
+            "paidAmount": 0,
+            "refundedAmount": 0,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": {
+                "local_id": "TX17654851528389",
+                "txid": "Te193dfb224a5",
+                "up": "",
+                "utm": "utm_source%3Ddirect"
+            },
+            "traceable": true,
+            "createdAt": "2025-12-11T17:32:32-03:00",
+            "updatedAt": "2025-12-11T17:32:32-03:00",
+            "paidAt": null,
+            "ip": "",
+            "authorizationCode": null,
+            "basePrice": null,
+            "interestRate": null,
+            "origin": null,
+            "customer": {
+                "id": "01957951-90b1-46d9-b972-011ad02b3eef",
+                "name": "Felipe Oliveira Silva",
+                "email": "felipeoliveirasilva2601@yahoo.com",
+                "phone": "59970871217",
+                "birthdate": null,
+                "createdAt": "2025-12-11T17:32:32.951685",
+                "document": {
+                    "number": "40513238204",
+                    "type": "cpf"
+                },
+                "address": null
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/944b7c71-95f5-482f-b917-02d8488a77a35204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304E650",
+                "expirationDate": "2025-12-11T17:52:32-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "fee": 0,
+                "address": null
+            },
+            "refusedReason": {
+                "acquirerCode": null,
+                "description": "",
+                "antifraud": false
+            },
+            "items": [
+                {
+                    "title": "Compra",
+                    "unitPrice": 3672,
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 3375,
+                    "chargeProcessingFee": true
+                }
+            ],
+            "refunds": [],
+            "delivery": null,
+            "payer": null,
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 297,
+                "netAmount": 3375
+            },
+            "fingerPrint": null,
+            "paymentlink_id": null
+        },
+        "status": "pending",
+        "created_at": "2025-12-11T20:32:36+00:00",
+        "gateway_response_verify": {
+            "id": "812a9ab7-b329-49c0-a8ea-aac198aceea5",
+            "amount": 3672,
+            "refundedAmount": null,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": "{\"local_id\":\"TX17654851528389\",\"txid\":\"Te193dfb224a5\",\"up\":\"\",\"utm\":\"utm_source%3Ddirect\"}",
+            "traceable": true,
+            "createdAt": "2025-12-11T17:32:32-03:00",
+            "updatedAt": "2025-12-11T17:32:32-03:00",
+            "paidAt": null,
+            "ip": null,
+            "externalRef": "",
+            "delivery": {
+                "status": null,
+                "trackingCode": null
+            },
+            "customer": {
+                "id": "01957951-90b1-46d9-b972-011ad02b3eef",
+                "name": "Felipe Oliveira Silva",
+                "email": "felipeoliveirasilva2601@yahoo.com",
+                "phone": "59970871217",
+                "birthdate": null,
+                "createdAt": "2025-12-11T17:32:32.951685",
+                "document": {
+                    "number": "40513238204",
+                    "type": "CPF"
+                },
+                "address": {
+                    "street": "Marginal Frederico",
+                    "streetNumber": "4578",
+                    "complement": "Quadra 88",
+                    "zipCode": "42732-716",
+                    "neighborhood": "Vila Nova Aliança",
+                    "city": "Martins do Descoberto",
+                    "state": "RO",
+                    "country": "BR"
+                }
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/944b7c71-95f5-482f-b917-02d8488a77a35204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304E650",
+                "expirationDate": "2025-12-11T17:52:32-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "street": "Marginal Frederico",
+                "streetNumber": "4578",
+                "complement": "Quadra 88",
+                "zipCode": "42732-716",
+                "neighborhood": "Vila Nova Aliança",
+                "city": "Martins do Descoberto",
+                "state": "RO",
+                "country": "BR"
+            },
+            "refusedReason": "",
+            "items": [
+                {
+                    "title": "Compra",
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 3375
+                }
+            ],
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 297,
+                "netAmount": 3375
+            }
+        },
+        "updated_at": "2025-12-11T20:32:37+00:00"
+    },
+    "TX17654852714951": {
+        "local_id": "TX17654852714951",
+        "gateway_id": "74bb8f6f-d08d-4e0c-ac8e-8d97917c21f0",
+        "txid": "Tac0506d22692",
+        "pixCode": {
+            "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/ffa966cc-fa54-4010-9b27-a12b4e1b624f5204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304C04B",
+            "expirationDate": "2025-12-11T17:54:32-03:00",
+            "end2EndId": null,
+            "receiptUrl": null
+        },
+        "valor": "36.72",
+        "nome": "Sofia Pinto Barbosa",
+        "gateway_response": {
+            "id": "74bb8f6f-d08d-4e0c-ac8e-8d97917c21f0",
+            "amount": 3672,
+            "paidAmount": 0,
+            "refundedAmount": 0,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": {
+                "local_id": "TX17654852714951",
+                "txid": "Tac0506d22692",
+                "up": "",
+                "utm": "utm_source%3Ddirect"
+            },
+            "traceable": true,
+            "createdAt": "2025-12-11T17:34:32-03:00",
+            "updatedAt": "2025-12-11T17:34:32-03:00",
+            "paidAt": null,
+            "ip": "",
+            "authorizationCode": null,
+            "basePrice": null,
+            "interestRate": null,
+            "origin": null,
+            "customer": {
+                "id": "3726e4f3-e39b-4d37-bc85-d628c7b44c58",
+                "name": "Sofia Pinto Barbosa",
+                "email": "sofiapintobarbosa0209@gmail.com",
+                "phone": "8097791124",
+                "birthdate": null,
+                "createdAt": "2025-12-11T17:34:32.374471",
+                "document": {
+                    "number": "47915775669",
+                    "type": "cpf"
+                },
+                "address": null
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/ffa966cc-fa54-4010-9b27-a12b4e1b624f5204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304C04B",
+                "expirationDate": "2025-12-11T17:54:32-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "fee": 0,
+                "address": null
+            },
+            "refusedReason": {
+                "acquirerCode": null,
+                "description": "",
+                "antifraud": false
+            },
+            "items": [
+                {
+                    "title": "Compra",
+                    "unitPrice": 3672,
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 3375,
+                    "chargeProcessingFee": true
+                }
+            ],
+            "refunds": [],
+            "delivery": null,
+            "payer": null,
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 297,
+                "netAmount": 3375
+            },
+            "fingerPrint": null,
+            "paymentlink_id": null
+        },
+        "status": "pending",
+        "created_at": "2025-12-11T20:34:35+00:00",
+        "gateway_response_verify": {
+            "id": "74bb8f6f-d08d-4e0c-ac8e-8d97917c21f0",
+            "amount": 3672,
+            "refundedAmount": null,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": "{\"local_id\":\"TX17654852714951\",\"txid\":\"Tac0506d22692\",\"up\":\"\",\"utm\":\"utm_source%3Ddirect\"}",
+            "traceable": true,
+            "createdAt": "2025-12-11T17:34:32-03:00",
+            "updatedAt": "2025-12-11T17:34:32-03:00",
+            "paidAt": null,
+            "ip": null,
+            "externalRef": "",
+            "delivery": {
+                "status": null,
+                "trackingCode": null
+            },
+            "customer": {
+                "id": "3726e4f3-e39b-4d37-bc85-d628c7b44c58",
+                "name": "Sofia Pinto Barbosa",
+                "email": "sofiapintobarbosa0209@gmail.com",
+                "phone": "8097791124",
+                "birthdate": null,
+                "createdAt": "2025-12-11T17:34:32.374471",
+                "document": {
+                    "number": "47915775669",
+                    "type": "CPF"
+                },
+                "address": {
+                    "street": "Avenida Barros",
+                    "streetNumber": "721",
+                    "complement": "Apto. 488",
+                    "zipCode": "24960-982",
+                    "neighborhood": "Centro",
+                    "city": "Marli do Sul",
+                    "state": "RJ",
+                    "country": "BR"
+                }
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/ffa966cc-fa54-4010-9b27-a12b4e1b624f5204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304C04B",
+                "expirationDate": "2025-12-11T17:54:32-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "street": "Avenida Barros",
+                "streetNumber": "721",
+                "complement": "Apto. 488",
+                "zipCode": "24960-982",
+                "neighborhood": "Centro",
+                "city": "Marli do Sul",
+                "state": "RJ",
+                "country": "BR"
+            },
+            "refusedReason": "",
+            "items": [
+                {
+                    "title": "Compra",
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 3375
+                }
+            ],
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 297,
+                "netAmount": 3375
+            }
+        },
+        "updated_at": "2025-12-11T20:34:36+00:00"
+    },
+    "TX17654853213661": {
+        "local_id": "TX17654853213661",
+        "gateway_id": "7ddf391d-80df-44f3-84e8-a41ad303ec22",
+        "txid": "T1c4fab57e3b1",
+        "pixCode": {
+            "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/795c2a6f-0978-493b-9ecb-76a676461db65204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304D34A",
+            "expirationDate": "2025-12-11T17:55:25-03:00",
+            "end2EndId": null,
+            "receiptUrl": null
+        },
+        "valor": "21.87",
+        "nome": "Ana Morais Costa",
+        "gateway_response": {
+            "id": "7ddf391d-80df-44f3-84e8-a41ad303ec22",
+            "amount": 2187,
+            "paidAmount": 0,
+            "refundedAmount": 0,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": {
+                "local_id": "TX17654853213661",
+                "txid": "T1c4fab57e3b1",
+                "up": "",
+                "utm": "utm_source%3Ddirect"
+            },
+            "traceable": true,
+            "createdAt": "2025-12-11T17:35:25-03:00",
+            "updatedAt": "2025-12-11T17:35:25-03:00",
+            "paidAt": null,
+            "ip": "",
+            "authorizationCode": null,
+            "basePrice": null,
+            "interestRate": null,
+            "origin": null,
+            "customer": {
+                "id": "e1d6e791-65ab-41da-a1cd-7c17ffe1ba51",
+                "name": "Ana Morais Costa",
+                "email": "anamoraiscosta3005@outlook.com",
+                "phone": "97960216686",
+                "birthdate": null,
+                "createdAt": "2025-12-11T17:35:25.173405",
+                "document": {
+                    "number": "76034040612",
+                    "type": "cpf"
+                },
+                "address": null
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/795c2a6f-0978-493b-9ecb-76a676461db65204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304D34A",
+                "expirationDate": "2025-12-11T17:55:25-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "fee": 0,
+                "address": null
+            },
+            "refusedReason": {
+                "acquirerCode": null,
+                "description": "",
+                "antifraud": false
+            },
+            "items": [
+                {
+                    "title": "Compra",
+                    "unitPrice": 2187,
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 1950,
+                    "chargeProcessingFee": true
+                }
+            ],
+            "refunds": [],
+            "delivery": null,
+            "payer": null,
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 237,
+                "netAmount": 1950
+            },
+            "fingerPrint": null,
+            "paymentlink_id": null
+        },
+        "status": "pending",
+        "created_at": "2025-12-11T20:35:28+00:00",
+        "gateway_response_verify": {
+            "id": "7ddf391d-80df-44f3-84e8-a41ad303ec22",
+            "amount": 2187,
+            "refundedAmount": null,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": "{\"local_id\":\"TX17654853213661\",\"txid\":\"T1c4fab57e3b1\",\"up\":\"\",\"utm\":\"utm_source%3Ddirect\"}",
+            "traceable": true,
+            "createdAt": "2025-12-11T17:35:25-03:00",
+            "updatedAt": "2025-12-11T17:35:25-03:00",
+            "paidAt": null,
+            "ip": null,
+            "externalRef": "",
+            "delivery": {
+                "status": null,
+                "trackingCode": null
+            },
+            "customer": {
+                "id": "e1d6e791-65ab-41da-a1cd-7c17ffe1ba51",
+                "name": "Ana Morais Costa",
+                "email": "anamoraiscosta3005@outlook.com",
+                "phone": "97960216686",
+                "birthdate": null,
+                "createdAt": "2025-12-11T17:35:25.173405",
+                "document": {
+                    "number": "76034040612",
+                    "type": "CPF"
+                },
+                "address": {
+                    "street": "Rodovia Maria Helena",
+                    "streetNumber": "7749",
+                    "complement": "Sobrado 16",
+                    "zipCode": "09636-908",
+                    "neighborhood": "Parque Tropical",
+                    "city": "Xavier do Norte",
+                    "state": "RJ",
+                    "country": "BR"
+                }
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/795c2a6f-0978-493b-9ecb-76a676461db65204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304D34A",
+                "expirationDate": "2025-12-11T17:55:25-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "street": "Rodovia Maria Helena",
+                "streetNumber": "7749",
+                "complement": "Sobrado 16",
+                "zipCode": "09636-908",
+                "neighborhood": "Parque Tropical",
+                "city": "Xavier do Norte",
+                "state": "RJ",
+                "country": "BR"
+            },
+            "refusedReason": "",
+            "items": [
+                {
+                    "title": "Compra",
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 1950
+                }
+            ],
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 237,
+                "netAmount": 1950
+            }
+        },
+        "updated_at": "2025-12-11T20:35:29+00:00"
+    },
+    "TX17654886662563": {
+        "local_id": "TX17654886662563",
+        "gateway_id": "a24aa791-293f-480c-9298-c870ccd04fd5",
+        "txid": "Tf43f8b1d1d37",
+        "pixCode": {
+            "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/a79906f7-4049-426d-9ff4-08626c31a7735204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304B915",
+            "expirationDate": "2025-12-11T18:51:06-03:00",
+            "end2EndId": null,
+            "receiptUrl": null
+        },
+        "valor": "21.87",
+        "nome": "Beatriz Castro Santos",
+        "gateway_response": {
+            "id": "a24aa791-293f-480c-9298-c870ccd04fd5",
+            "amount": 2187,
+            "paidAmount": 0,
+            "refundedAmount": 0,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": {
+                "local_id": "TX17654886662563",
+                "txid": "Tf43f8b1d1d37",
+                "up": "",
+                "utm": "utm_source%3Ddirect"
+            },
+            "traceable": true,
+            "createdAt": "2025-12-11T18:31:06-03:00",
+            "updatedAt": "2025-12-11T18:31:06-03:00",
+            "paidAt": null,
+            "ip": "",
+            "authorizationCode": null,
+            "basePrice": null,
+            "interestRate": null,
+            "origin": null,
+            "customer": {
+                "id": "713c890e-0e2d-4802-89d9-189cd538c547",
+                "name": "Beatriz Castro Santos",
+                "email": "beatrizcastrosantos1508@gmail.com",
+                "phone": "4692410330",
+                "birthdate": null,
+                "createdAt": "2025-12-11T18:31:06.453692",
+                "document": {
+                    "number": "96795523063",
+                    "type": "cpf"
+                },
+                "address": null
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/a79906f7-4049-426d-9ff4-08626c31a7735204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304B915",
+                "expirationDate": "2025-12-11T18:51:06-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "fee": 0,
+                "address": null
+            },
+            "refusedReason": {
+                "acquirerCode": null,
+                "description": "",
+                "antifraud": false
+            },
+            "items": [
+                {
+                    "title": "Compra",
+                    "unitPrice": 2187,
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 1950,
+                    "chargeProcessingFee": true
+                }
+            ],
+            "refunds": [],
+            "delivery": null,
+            "payer": null,
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 237,
+                "netAmount": 1950
+            },
+            "fingerPrint": null,
+            "paymentlink_id": null
+        },
+        "status": "pending",
+        "created_at": "2025-12-11T21:31:09+00:00",
+        "gateway_response_verify": {
+            "id": "a24aa791-293f-480c-9298-c870ccd04fd5",
+            "amount": 2187,
+            "refundedAmount": null,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": "{\"local_id\":\"TX17654886662563\",\"txid\":\"Tf43f8b1d1d37\",\"up\":\"\",\"utm\":\"utm_source%3Ddirect\"}",
+            "traceable": true,
+            "createdAt": "2025-12-11T18:31:06-03:00",
+            "updatedAt": "2025-12-11T18:31:06-03:00",
+            "paidAt": null,
+            "ip": null,
+            "externalRef": "",
+            "delivery": {
+                "status": null,
+                "trackingCode": null
+            },
+            "customer": {
+                "id": "713c890e-0e2d-4802-89d9-189cd538c547",
+                "name": "Beatriz Castro Santos",
+                "email": "beatrizcastrosantos1508@gmail.com",
+                "phone": "4692410330",
+                "birthdate": null,
+                "createdAt": "2025-12-11T18:31:06.453692",
+                "document": {
+                    "number": "96795523063",
+                    "type": "CPF"
+                },
+                "address": {
+                    "street": "Avenida Larissa",
+                    "streetNumber": "683",
+                    "complement": "Sobrado 17",
+                    "zipCode": "02046-002",
+                    "neighborhood": "Jardim Atlântico",
+                    "city": "Pablo do Norte",
+                    "state": "MT",
+                    "country": "BR"
+                }
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/a79906f7-4049-426d-9ff4-08626c31a7735204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304B915",
+                "expirationDate": "2025-12-11T18:51:06-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "street": "Avenida Larissa",
+                "streetNumber": "683",
+                "complement": "Sobrado 17",
+                "zipCode": "02046-002",
+                "neighborhood": "Jardim Atlântico",
+                "city": "Pablo do Norte",
+                "state": "MT",
+                "country": "BR"
+            },
+            "refusedReason": "",
+            "items": [
+                {
+                    "title": "Compra",
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 1950
+                }
+            ],
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 237,
+                "netAmount": 1950
+            }
+        },
+        "updated_at": "2025-12-11T21:31:10+00:00"
+    },
+    "TX17654888159930": {
+        "local_id": "TX17654888159930",
+        "gateway_id": "d46d41dc-92a0-4791-b33c-5f9dda7c7266",
+        "txid": "T880e7c34d114",
+        "pixCode": {
+            "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/c94fac6b-11f1-413c-8d23-e6147b4079e35204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304E68A",
+            "expirationDate": "2025-12-11T18:53:35-03:00",
+            "end2EndId": null,
+            "receiptUrl": null
+        },
+        "valor": "21.87",
+        "nome": "Felipe Santos Cavalcanti",
+        "gateway_response": {
+            "id": "d46d41dc-92a0-4791-b33c-5f9dda7c7266",
+            "amount": 2187,
+            "paidAmount": 0,
+            "refundedAmount": 0,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": {
+                "local_id": "TX17654888159930",
+                "txid": "T880e7c34d114",
+                "up": "",
+                "utm": "utm_source%3Ddirect"
+            },
+            "traceable": true,
+            "createdAt": "2025-12-11T18:33:35-03:00",
+            "updatedAt": "2025-12-11T18:33:35-03:00",
+            "paidAt": null,
+            "ip": "",
+            "authorizationCode": null,
+            "basePrice": null,
+            "interestRate": null,
+            "origin": null,
+            "customer": {
+                "id": "11c338d1-3c89-4ef6-b8e3-7b269d25b96a",
+                "name": "Felipe Santos Cavalcanti",
+                "email": "felipesantoscavalcanti2202@hotmail.com",
+                "phone": "2795818878",
+                "birthdate": null,
+                "createdAt": "2025-12-11T18:33:35.374176",
+                "document": {
+                    "number": "72846325421",
+                    "type": "cpf"
+                },
+                "address": null
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/c94fac6b-11f1-413c-8d23-e6147b4079e35204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304E68A",
+                "expirationDate": "2025-12-11T18:53:35-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "fee": 0,
+                "address": null
+            },
+            "refusedReason": {
+                "acquirerCode": null,
+                "description": "",
+                "antifraud": false
+            },
+            "items": [
+                {
+                    "title": "Compra",
+                    "unitPrice": 2187,
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 1950,
+                    "chargeProcessingFee": true
+                }
+            ],
+            "refunds": [],
+            "delivery": null,
+            "payer": null,
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 237,
+                "netAmount": 1950
+            },
+            "fingerPrint": null,
+            "paymentlink_id": null
+        },
+        "status": "pending",
+        "created_at": "2025-12-11T21:33:38+00:00",
+        "gateway_response_verify": {
+            "id": "d46d41dc-92a0-4791-b33c-5f9dda7c7266",
+            "amount": 2187,
+            "refundedAmount": null,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": "{\"local_id\":\"TX17654888159930\",\"txid\":\"T880e7c34d114\",\"up\":\"\",\"utm\":\"utm_source%3Ddirect\"}",
+            "traceable": true,
+            "createdAt": "2025-12-11T18:33:35-03:00",
+            "updatedAt": "2025-12-11T18:33:35-03:00",
+            "paidAt": null,
+            "ip": null,
+            "externalRef": "",
+            "delivery": {
+                "status": null,
+                "trackingCode": null
+            },
+            "customer": {
+                "id": "11c338d1-3c89-4ef6-b8e3-7b269d25b96a",
+                "name": "Felipe Santos Cavalcanti",
+                "email": "felipesantoscavalcanti2202@hotmail.com",
+                "phone": "2795818878",
+                "birthdate": null,
+                "createdAt": "2025-12-11T18:33:35.374176",
+                "document": {
+                    "number": "72846325421",
+                    "type": "CPF"
+                },
+                "address": {
+                    "street": "Marginal Lorraine",
+                    "streetNumber": "199",
+                    "complement": "Sobrado 94",
+                    "zipCode": "01758-201",
+                    "neighborhood": "Jardim das Oliveiras",
+                    "city": "Macedo do Descoberto",
+                    "state": "MT",
+                    "country": "BR"
+                }
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/c94fac6b-11f1-413c-8d23-e6147b4079e35204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304E68A",
+                "expirationDate": "2025-12-11T18:53:35-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "street": "Marginal Lorraine",
+                "streetNumber": "199",
+                "complement": "Sobrado 94",
+                "zipCode": "01758-201",
+                "neighborhood": "Jardim das Oliveiras",
+                "city": "Macedo do Descoberto",
+                "state": "MT",
+                "country": "BR"
+            },
+            "refusedReason": "",
+            "items": [
+                {
+                    "title": "Compra",
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 1950
+                }
+            ],
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 237,
+                "netAmount": 1950
+            }
+        },
+        "updated_at": "2025-12-11T21:33:39+00:00"
+    },
+    "TX17654888319293": {
+        "local_id": "TX17654888319293",
+        "gateway_id": "263f1e47-1ffb-4e2a-98c3-91c3f10af687",
+        "txid": "Tc514b5cda91d",
+        "pixCode": {
+            "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/7276561f-0501-4887-968b-dd13cd78fbef5204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304FA1F",
+            "expirationDate": "2025-12-11T18:53:52-03:00",
+            "end2EndId": null,
+            "receiptUrl": null
+        },
+        "valor": "21.87",
+        "nome": "Eduardo Souza Vieira",
+        "gateway_response": {
+            "id": "263f1e47-1ffb-4e2a-98c3-91c3f10af687",
+            "amount": 2187,
+            "paidAmount": 0,
+            "refundedAmount": 0,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": {
+                "local_id": "TX17654888319293",
+                "txid": "Tc514b5cda91d",
+                "up": "",
+                "utm": "utm_source%3Ddirect"
+            },
+            "traceable": true,
+            "createdAt": "2025-12-11T18:33:52-03:00",
+            "updatedAt": "2025-12-11T18:33:52-03:00",
+            "paidAt": null,
+            "ip": "",
+            "authorizationCode": null,
+            "basePrice": null,
+            "interestRate": null,
+            "origin": null,
+            "customer": {
+                "id": "da052487-63ba-4859-8e79-c5f990e746de",
+                "name": "Eduardo Souza Vieira",
+                "email": "eduardosouzavieira0803@hotmail.com",
+                "phone": "62986469018",
+                "birthdate": null,
+                "createdAt": "2025-12-11T18:33:52.278489",
+                "document": {
+                    "number": "31640425748",
+                    "type": "cpf"
+                },
+                "address": null
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/7276561f-0501-4887-968b-dd13cd78fbef5204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304FA1F",
+                "expirationDate": "2025-12-11T18:53:52-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "fee": 0,
+                "address": null
+            },
+            "refusedReason": {
+                "acquirerCode": null,
+                "description": "",
+                "antifraud": false
+            },
+            "items": [
+                {
+                    "title": "Compra",
+                    "unitPrice": 2187,
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 1950,
+                    "chargeProcessingFee": true
+                }
+            ],
+            "refunds": [],
+            "delivery": null,
+            "payer": null,
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 237,
+                "netAmount": 1950
+            },
+            "fingerPrint": null,
+            "paymentlink_id": null
+        },
+        "status": "pending",
+        "created_at": "2025-12-11T21:33:57+00:00",
+        "gateway_response_verify": {
+            "id": "263f1e47-1ffb-4e2a-98c3-91c3f10af687",
+            "amount": 2187,
+            "refundedAmount": null,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": "{\"local_id\":\"TX17654888319293\",\"txid\":\"Tc514b5cda91d\",\"up\":\"\",\"utm\":\"utm_source%3Ddirect\"}",
+            "traceable": true,
+            "createdAt": "2025-12-11T18:33:52-03:00",
+            "updatedAt": "2025-12-11T18:33:52-03:00",
+            "paidAt": null,
+            "ip": null,
+            "externalRef": "",
+            "delivery": {
+                "status": null,
+                "trackingCode": null
+            },
+            "customer": {
+                "id": "da052487-63ba-4859-8e79-c5f990e746de",
+                "name": "Eduardo Souza Vieira",
+                "email": "eduardosouzavieira0803@hotmail.com",
+                "phone": "62986469018",
+                "birthdate": null,
+                "createdAt": "2025-12-11T18:33:52.278489",
+                "document": {
+                    "number": "31640425748",
+                    "type": "CPF"
+                },
+                "address": {
+                    "street": "Rua Félix",
+                    "streetNumber": "18668",
+                    "complement": "Lote 47",
+                    "zipCode": "31153-094",
+                    "neighborhood": "Parque dos Lagos",
+                    "city": "Meire do Norte",
+                    "state": "AP",
+                    "country": "BR"
+                }
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/7276561f-0501-4887-968b-dd13cd78fbef5204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304FA1F",
+                "expirationDate": "2025-12-11T18:53:52-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "street": "Rua Félix",
+                "streetNumber": "18668",
+                "complement": "Lote 47",
+                "zipCode": "31153-094",
+                "neighborhood": "Parque dos Lagos",
+                "city": "Meire do Norte",
+                "state": "AP",
+                "country": "BR"
+            },
+            "refusedReason": "",
+            "items": [
+                {
+                    "title": "Compra",
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 1950
+                }
+            ],
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 237,
+                "netAmount": 1950
+            }
+        },
+        "updated_at": "2025-12-11T21:33:58+00:00"
+    },
+    "TX17654892162639": {
+        "local_id": "TX17654892162639",
+        "gateway_id": "b08705d8-bccb-413d-9e03-66e1a762c114",
+        "txid": "Ta4c2c7e9e2f3",
+        "pixCode": {
+            "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/01205fc3-43b9-4239-832f-c1e4f5c0acae5204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304C992",
+            "expirationDate": "2025-12-11T19:00:17-03:00",
+            "end2EndId": null,
+            "receiptUrl": null
+        },
+        "valor": "21.87",
+        "nome": "Larissa Barbosa Rodrigues",
+        "gateway_response": {
+            "id": "b08705d8-bccb-413d-9e03-66e1a762c114",
+            "amount": 2187,
+            "paidAmount": 0,
+            "refundedAmount": 0,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": {
+                "local_id": "TX17654892162639",
+                "txid": "Ta4c2c7e9e2f3",
+                "up": "",
+                "utm": "utm_source%3Ddirect"
+            },
+            "traceable": true,
+            "createdAt": "2025-12-11T18:40:17-03:00",
+            "updatedAt": "2025-12-11T18:40:17-03:00",
+            "paidAt": null,
+            "ip": "",
+            "authorizationCode": null,
+            "basePrice": null,
+            "interestRate": null,
+            "origin": null,
+            "customer": {
+                "id": "fd41b32c-5fd7-4605-9317-ab879d3ab1e8",
+                "name": "Larissa Barbosa Rodrigues",
+                "email": "larissabarbosarodrigues2204@gmail.com",
+                "phone": "26917955039",
+                "birthdate": null,
+                "createdAt": "2025-12-11T18:40:17.511743",
+                "document": {
+                    "number": "03210969590",
+                    "type": "cpf"
+                },
+                "address": null
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/01205fc3-43b9-4239-832f-c1e4f5c0acae5204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304C992",
+                "expirationDate": "2025-12-11T19:00:17-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "fee": 0,
+                "address": null
+            },
+            "refusedReason": {
+                "acquirerCode": null,
+                "description": "",
+                "antifraud": false
+            },
+            "items": [
+                {
+                    "title": "Compra",
+                    "unitPrice": 2187,
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 1950,
+                    "chargeProcessingFee": true
+                }
+            ],
+            "refunds": [],
+            "delivery": null,
+            "payer": null,
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 237,
+                "netAmount": 1950
+            },
+            "fingerPrint": null,
+            "paymentlink_id": null
+        },
+        "status": "pending",
+        "created_at": "2025-12-11T21:40:21+00:00",
+        "gateway_response_verify": {
+            "id": "b08705d8-bccb-413d-9e03-66e1a762c114",
+            "amount": 2187,
+            "refundedAmount": null,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": "{\"local_id\":\"TX17654892162639\",\"txid\":\"Ta4c2c7e9e2f3\",\"up\":\"\",\"utm\":\"utm_source%3Ddirect\"}",
+            "traceable": true,
+            "createdAt": "2025-12-11T18:40:17-03:00",
+            "updatedAt": "2025-12-11T18:40:17-03:00",
+            "paidAt": null,
+            "ip": null,
+            "externalRef": "",
+            "delivery": {
+                "status": null,
+                "trackingCode": null
+            },
+            "customer": {
+                "id": "fd41b32c-5fd7-4605-9317-ab879d3ab1e8",
+                "name": "Larissa Barbosa Rodrigues",
+                "email": "larissabarbosarodrigues2204@gmail.com",
+                "phone": "26917955039",
+                "birthdate": null,
+                "createdAt": "2025-12-11T18:40:17.511743",
+                "document": {
+                    "number": "03210969590",
+                    "type": "CPF"
+                },
+                "address": {
+                    "street": "Travessa Moreira",
+                    "streetNumber": "2516",
+                    "complement": "Quadra 11",
+                    "zipCode": "18679-317",
+                    "neighborhood": "Jardim Tropical",
+                    "city": "Oliveira de Nossa Senhora",
+                    "state": "RR",
+                    "country": "BR"
+                }
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/01205fc3-43b9-4239-832f-c1e4f5c0acae5204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304C992",
+                "expirationDate": "2025-12-11T19:00:17-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "street": "Travessa Moreira",
+                "streetNumber": "2516",
+                "complement": "Quadra 11",
+                "zipCode": "18679-317",
+                "neighborhood": "Jardim Tropical",
+                "city": "Oliveira de Nossa Senhora",
+                "state": "RR",
+                "country": "BR"
+            },
+            "refusedReason": "",
+            "items": [
+                {
+                    "title": "Compra",
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 1950
+                }
+            ],
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 237,
+                "netAmount": 1950
+            }
+        },
+        "updated_at": "2025-12-11T21:40:21+00:00"
+    },
+    "TX17654894371674": {
+        "local_id": "TX17654894371674",
+        "gateway_id": "0b9c21e7-42c3-4e0e-abe3-4c8836fa9df1",
+        "txid": "Tf1f0351e0521",
+        "pixCode": {
+            "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/1187fb31-e7fd-4474-94b2-c5ba57602b255204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***63043804",
+            "expirationDate": "2025-12-11T19:03:58-03:00",
+            "end2EndId": null,
+            "receiptUrl": null
+        },
+        "valor": "36.72",
+        "nome": "Ricardo Ribeiro Souza",
+        "gateway_response": {
+            "id": "0b9c21e7-42c3-4e0e-abe3-4c8836fa9df1",
+            "amount": 3672,
+            "paidAmount": 0,
+            "refundedAmount": 0,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": {
+                "local_id": "TX17654894371674",
+                "txid": "Tf1f0351e0521",
+                "up": "",
+                "utm": "utm_source%3Ddirect"
+            },
+            "traceable": true,
+            "createdAt": "2025-12-11T18:43:58-03:00",
+            "updatedAt": "2025-12-11T18:43:58-03:00",
+            "paidAt": null,
+            "ip": "",
+            "authorizationCode": null,
+            "basePrice": null,
+            "interestRate": null,
+            "origin": null,
+            "customer": {
+                "id": "1d22ff7c-c9d7-432e-9e03-fc3a9bf58f4c",
+                "name": "Ricardo Ribeiro Souza",
+                "email": "ricardoribeirosouza3001@hotmail.com",
+                "phone": "34923166533",
+                "birthdate": null,
+                "createdAt": "2025-12-11T18:43:58.47928",
+                "document": {
+                    "number": "39993017752",
+                    "type": "cpf"
+                },
+                "address": null
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/1187fb31-e7fd-4474-94b2-c5ba57602b255204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***63043804",
+                "expirationDate": "2025-12-11T19:03:58-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "fee": 0,
+                "address": null
+            },
+            "refusedReason": {
+                "acquirerCode": null,
+                "description": "",
+                "antifraud": false
+            },
+            "items": [
+                {
+                    "title": "Compra",
+                    "unitPrice": 3672,
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 3375,
+                    "chargeProcessingFee": true
+                }
+            ],
+            "refunds": [],
+            "delivery": null,
+            "payer": null,
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 297,
+                "netAmount": 3375
+            },
+            "fingerPrint": null,
+            "paymentlink_id": null
+        },
+        "status": "pending",
+        "created_at": "2025-12-11T21:44:01+00:00",
+        "gateway_response_verify": {
+            "id": "0b9c21e7-42c3-4e0e-abe3-4c8836fa9df1",
+            "amount": 3672,
+            "refundedAmount": null,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": "{\"local_id\":\"TX17654894371674\",\"txid\":\"Tf1f0351e0521\",\"up\":\"\",\"utm\":\"utm_source%3Ddirect\"}",
+            "traceable": true,
+            "createdAt": "2025-12-11T18:43:58-03:00",
+            "updatedAt": "2025-12-11T18:43:58-03:00",
+            "paidAt": null,
+            "ip": null,
+            "externalRef": "",
+            "delivery": {
+                "status": null,
+                "trackingCode": null
+            },
+            "customer": {
+                "id": "1d22ff7c-c9d7-432e-9e03-fc3a9bf58f4c",
+                "name": "Ricardo Ribeiro Souza",
+                "email": "ricardoribeirosouza3001@hotmail.com",
+                "phone": "34923166533",
+                "birthdate": null,
+                "createdAt": "2025-12-11T18:43:58.47928",
+                "document": {
+                    "number": "39993017752",
+                    "type": "CPF"
+                },
+                "address": {
+                    "street": "Rodovia Melo",
+                    "streetNumber": "905",
+                    "complement": "Apto. 582",
+                    "zipCode": "19072-712",
+                    "neighborhood": "Parque Brasília",
+                    "city": "Oliveira de Nossa Senhora",
+                    "state": "SP",
+                    "country": "BR"
+                }
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/1187fb31-e7fd-4474-94b2-c5ba57602b255204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***63043804",
+                "expirationDate": "2025-12-11T19:03:58-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "street": "Rodovia Melo",
+                "streetNumber": "905",
+                "complement": "Apto. 582",
+                "zipCode": "19072-712",
+                "neighborhood": "Parque Brasília",
+                "city": "Oliveira de Nossa Senhora",
+                "state": "SP",
+                "country": "BR"
+            },
+            "refusedReason": "",
+            "items": [
+                {
+                    "title": "Compra",
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 3375
+                }
+            ],
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 297,
+                "netAmount": 3375
+            }
+        },
+        "updated_at": "2025-12-11T21:44:01+00:00"
+    },
+    "TX17655007711813": {
+        "local_id": "TX17655007711813",
+        "gateway_id": "be3cb64c-38d9-4d95-8c70-65f1fe7221c1",
+        "txid": "Tc2c1e1cca192",
+        "pixCode": {
+            "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/91850180-9b72-4052-b4f9-110162365b395204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***63041569",
+            "expirationDate": "2025-12-11T22:12:52-03:00",
+            "end2EndId": null,
+            "receiptUrl": null
+        },
+        "valor": "36.72",
+        "nome": "Renato Pinto Vieira",
+        "gateway_response": {
+            "id": "be3cb64c-38d9-4d95-8c70-65f1fe7221c1",
+            "amount": 3672,
+            "paidAmount": 0,
+            "refundedAmount": 0,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": {
+                "local_id": "TX17655007711813",
+                "txid": "Tc2c1e1cca192",
+                "up": "",
+                "utm": "utm_source%3Ddirect"
+            },
+            "traceable": true,
+            "createdAt": "2025-12-11T21:52:52-03:00",
+            "updatedAt": "2025-12-11T21:52:52-03:00",
+            "paidAt": null,
+            "ip": "",
+            "authorizationCode": null,
+            "basePrice": null,
+            "interestRate": null,
+            "origin": null,
+            "customer": {
+                "id": "4deb65f3-0f37-462a-b73c-50f17f62b772",
+                "name": "Renato Pinto Vieira",
+                "email": "renatopintovieira0102@gmail.com",
+                "phone": "5288427215",
+                "birthdate": null,
+                "createdAt": "2025-12-11T21:52:51.98945",
+                "document": {
+                    "number": "04477013981",
+                    "type": "cpf"
+                },
+                "address": null
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/91850180-9b72-4052-b4f9-110162365b395204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***63041569",
+                "expirationDate": "2025-12-11T22:12:52-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "fee": 0,
+                "address": null
+            },
+            "refusedReason": {
+                "acquirerCode": null,
+                "description": "",
+                "antifraud": false
+            },
+            "items": [
+                {
+                    "title": "Compra",
+                    "unitPrice": 3672,
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 3375,
+                    "chargeProcessingFee": true
+                }
+            ],
+            "refunds": [],
+            "delivery": null,
+            "payer": null,
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 297,
+                "netAmount": 3375
+            },
+            "fingerPrint": null,
+            "paymentlink_id": null
+        },
+        "status": "pending",
+        "created_at": "2025-12-12T00:52:55+00:00",
+        "gateway_response_verify": {
+            "id": "be3cb64c-38d9-4d95-8c70-65f1fe7221c1",
+            "amount": 3672,
+            "refundedAmount": null,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": "{\"local_id\":\"TX17655007711813\",\"txid\":\"Tc2c1e1cca192\",\"up\":\"\",\"utm\":\"utm_source%3Ddirect\"}",
+            "traceable": true,
+            "createdAt": "2025-12-11T21:52:52-03:00",
+            "updatedAt": "2025-12-11T21:52:52-03:00",
+            "paidAt": null,
+            "ip": null,
+            "externalRef": "",
+            "delivery": {
+                "status": null,
+                "trackingCode": null
+            },
+            "customer": {
+                "id": "4deb65f3-0f37-462a-b73c-50f17f62b772",
+                "name": "Renato Pinto Vieira",
+                "email": "renatopintovieira0102@gmail.com",
+                "phone": "5288427215",
+                "birthdate": null,
+                "createdAt": "2025-12-11T21:52:51.98945",
+                "document": {
+                    "number": "04477013981",
+                    "type": "CPF"
+                },
+                "address": {
+                    "street": "Travessa Batista",
+                    "streetNumber": "817",
+                    "complement": "Quadra 98",
+                    "zipCode": "16195-433",
+                    "neighborhood": "Jardim Primavera",
+                    "city": "Barros do Descoberto",
+                    "state": "PA",
+                    "country": "BR"
+                }
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/91850180-9b72-4052-b4f9-110162365b395204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***63041569",
+                "expirationDate": "2025-12-11T22:12:52-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "street": "Travessa Batista",
+                "streetNumber": "817",
+                "complement": "Quadra 98",
+                "zipCode": "16195-433",
+                "neighborhood": "Jardim Primavera",
+                "city": "Barros do Descoberto",
+                "state": "PA",
+                "country": "BR"
+            },
+            "refusedReason": "",
+            "items": [
+                {
+                    "title": "Compra",
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 3375
+                }
+            ],
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 297,
+                "netAmount": 3375
+            }
+        },
+        "updated_at": "2025-12-12T00:52:55+00:00"
+    },
+    "TX17655008244585": {
+        "local_id": "TX17655008244585",
+        "gateway_id": "1296f10c-ff71-4ac8-bfde-357b34212ff6",
+        "txid": "T08e2acbb719e",
+        "pixCode": {
+            "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/5c06e525-9617-41e1-8f38-405588be24b95204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304EA0B",
+            "expirationDate": "2025-12-11T22:13:45-03:00",
+            "end2EndId": null,
+            "receiptUrl": null
+        },
+        "valor": "36.72",
+        "nome": "Sofia Rodrigues Gomes",
+        "gateway_response": {
+            "id": "1296f10c-ff71-4ac8-bfde-357b34212ff6",
+            "amount": 3672,
+            "paidAmount": 0,
+            "refundedAmount": 0,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": {
+                "local_id": "TX17655008244585",
+                "txid": "T08e2acbb719e",
+                "up": "",
+                "utm": "utm_source%3Ddirect"
+            },
+            "traceable": true,
+            "createdAt": "2025-12-11T21:53:45-03:00",
+            "updatedAt": "2025-12-11T21:53:45-03:00",
+            "paidAt": null,
+            "ip": "",
+            "authorizationCode": null,
+            "basePrice": null,
+            "interestRate": null,
+            "origin": null,
+            "customer": {
+                "id": "15d28cce-79d1-44a0-a3e8-c874450a7250",
+                "name": "Sofia Rodrigues Gomes",
+                "email": "sofiarodriguesgomes3006@gmail.com",
+                "phone": "2028503754",
+                "birthdate": null,
+                "createdAt": "2025-12-11T21:53:45.365895",
+                "document": {
+                    "number": "03718191725",
+                    "type": "cpf"
+                },
+                "address": null
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/5c06e525-9617-41e1-8f38-405588be24b95204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304EA0B",
+                "expirationDate": "2025-12-11T22:13:45-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "fee": 0,
+                "address": null
+            },
+            "refusedReason": {
+                "acquirerCode": null,
+                "description": "",
+                "antifraud": false
+            },
+            "items": [
+                {
+                    "title": "Compra",
+                    "unitPrice": 3672,
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 3375,
+                    "chargeProcessingFee": true
+                }
+            ],
+            "refunds": [],
+            "delivery": null,
+            "payer": null,
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 297,
+                "netAmount": 3375
+            },
+            "fingerPrint": null,
+            "paymentlink_id": null
+        },
+        "status": "pending",
+        "created_at": "2025-12-12T00:53:48+00:00",
+        "gateway_response_verify": {
+            "id": "1296f10c-ff71-4ac8-bfde-357b34212ff6",
+            "amount": 3672,
+            "refundedAmount": null,
+            "companyId": "db9ac3e5-c99b-476f-a454-6df8c06e2883",
+            "installments": 1,
+            "paymentMethod": "PIX",
+            "status": "waiting_payment",
+            "postbackUrl": "https:\/\/ttkrecursos.shop\/api\/gateway?acao=webhook",
+            "metadata": "{\"local_id\":\"TX17655008244585\",\"txid\":\"T08e2acbb719e\",\"up\":\"\",\"utm\":\"utm_source%3Ddirect\"}",
+            "traceable": true,
+            "createdAt": "2025-12-11T21:53:45-03:00",
+            "updatedAt": "2025-12-11T21:53:45-03:00",
+            "paidAt": null,
+            "ip": null,
+            "externalRef": "",
+            "delivery": {
+                "status": null,
+                "trackingCode": null
+            },
+            "customer": {
+                "id": "15d28cce-79d1-44a0-a3e8-c874450a7250",
+                "name": "Sofia Rodrigues Gomes",
+                "email": "sofiarodriguesgomes3006@gmail.com",
+                "phone": "2028503754",
+                "birthdate": null,
+                "createdAt": "2025-12-11T21:53:45.365895",
+                "document": {
+                    "number": "03718191725",
+                    "type": "CPF"
+                },
+                "address": {
+                    "street": "Rua Pereira",
+                    "streetNumber": "4326",
+                    "complement": "Apto. 406",
+                    "zipCode": "99642-477",
+                    "neighborhood": "Jardim São Francisco",
+                    "city": "Batista do Descoberto",
+                    "state": "CE",
+                    "country": "BR"
+                }
+            },
+            "card": null,
+            "boleto": null,
+            "pix": {
+                "qrcode": "00020101021226880014br.gov.bcb.pix2566qrcode.microcashif.com.br\/pix\/5c06e525-9617-41e1-8f38-405588be24b95204000053039865802BR5923JJGINTERMEDIACOESDIGITA6008SaoPaulo6107972500062070503***6304EA0B",
+                "expirationDate": "2025-12-11T22:13:45-03:00",
+                "end2EndId": null,
+                "receiptUrl": null
+            },
+            "shipping": {
+                "street": "Rua Pereira",
+                "streetNumber": "4326",
+                "complement": "Apto. 406",
+                "zipCode": "99642-477",
+                "neighborhood": "Jardim São Francisco",
+                "city": "Batista do Descoberto",
+                "state": "CE",
+                "country": "BR"
+            },
+            "refusedReason": "",
+            "items": [
+                {
+                    "title": "Compra",
+                    "quantity": 1
+                }
+            ],
+            "splits": [
+                {
+                    "recipientId": "0512d145-b540-4db8-8118-126d2694430e",
+                    "netAmount": 3375
+                }
+            ],
+            "fee": {
+                "fixedAmount": 1.5,
+                "spreadPercentage": 3.99,
+                "estimatedFee": 297,
+                "netAmount": 3375
+            }
+        },
+        "updated_at": "2025-12-12T00:53:49+00:00"
+    }
+}
