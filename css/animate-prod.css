@@ -1,0 +1,230 @@
+/* Esse arquivo é para a página final */
+
+.bounceInDown,
+.jackInTheBox,
+.rollIn,
+.bounceInLeft,
+.bounceInRight,
+.bounceInUp,
+.fadeIn,
+.fadeInDown,
+.fadeInDownBig,
+.fadeInLeft,
+.fadeInLeftBig,
+.fadeInRight,
+.fadeInRightBig,
+.fadeInUp,
+.fadeInUpBig,
+.fadeIn-prod {
+	opacity: 0;
+	/* visibility: hidden; */
+	animation-fill-mode: both;
+}
+
+.fadeIn-video,
+.bounceInDown-video,
+.jackInTheBox-video,
+.rollIn-video,
+.bounceInLeft-video,
+.bounceInUp-video,
+.bounceInUp-video,
+.fadeInDown-video,
+.fadeInDownBig-video,
+.fadeInLeft-video,
+.fadeInLeftBig-video,
+.fadeInRight-video,
+.fadeInRightBig-video,
+.fadeInUp-video,
+.fadeInUpBig-video,
+.fadeIn-prod-video {
+	opacity: 0;
+	/* visibility: hidden; */
+	animation-fill-mode: both;
+}
+
+.bounceIn,
+.bounceIn-video {
+	opacity: 0;
+	-webkit-transform: scale3d(0.3, 0.3, 0.3);
+	transform: scale3d(0.3, 0.3, 0.3);
+}
+
+.jackInTheBox,
+.jackInTheBox-video {
+	-webkit-transform: scale(0.1) rotate(30deg);
+	transform: scale(0.1) rotate(30deg);
+	-webkit-transform-origin: center bottom;
+	transform-origin: center bottom;
+}
+
+.rollIn,
+.rollIn-video {
+	-webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+	transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+}
+
+.flipInX,
+.flipInX-video {
+	-webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+	transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+	-webkit-animation-timing-function: ease-in;
+	animation-timing-function: ease-in;
+	opacity: 0;
+}
+.flipInY,
+.flipInX-video {
+	-webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+	transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+	-webkit-animation-timing-function: ease-in;
+	animation-timing-function: ease-in;
+	opacity: 0;
+}
+.lightSpeedIn,
+.lightSpeedIn-video {
+	-webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+	transform: translate3d(100%, 0, 0) skewX(-30deg);
+	opacity: 0;
+}
+.rotateIn,
+.rotateIn-video {
+	-webkit-transform-origin: center;
+	transform-origin: center;
+	-webkit-transform: rotate3d(0, 0, 1, -200deg);
+	transform: rotate3d(0, 0, 1, -200deg);
+	opacity: 0;
+	animation-fill-mode: both;
+}
+.rotateInDownLeft,
+.rotateInDownLeft-video {
+	-webkit-transform-origin: right bottom;
+	transform-origin: right bottom;
+	-webkit-transform: rotate3d(0, 0, 1, 45deg);
+	transform: rotate3d(0, 0, 1, 45deg);
+	opacity: 0;
+	animation-fill-mode: both;
+}
+.rotateInDownRight,
+.rotateInDownRight-video {
+	-webkit-transform-origin: right bottom;
+	transform-origin: right bottom;
+	-webkit-transform: rotate3d(0, 0, 1, 45deg);
+	transform: rotate3d(0, 0, 1, 45deg);
+	opacity: 0;
+	animation-fill-mode: both;
+}
+.rotateInUpLeft,
+.rotateInUpLeft-video {
+	-webkit-transform-origin: left bottom;
+	transform-origin: left bottom;
+	-webkit-transform: rotate3d(0, 0, 1, 45deg);
+	transform: rotate3d(0, 0, 1, 45deg);
+	opacity: 0;
+	animation-fill-mode: both;
+}
+.rotateInUpRight,
+.rotateInUpRight-video {
+	-webkit-transform-origin: right bottom;
+	transform-origin: right bottom;
+	-webkit-transform: rotate3d(0, 0, 1, -90deg);
+	transform: rotate3d(0, 0, 1, -90deg);
+	opacity: 0;
+	animation-fill-mode: both;
+}
+.slideInUp,
+.slideInUp-video {
+	-webkit-transform: translate3d(0, 100%, 0);
+	transform: translate3d(0, 100%, 0);
+	visibility: visible;
+	animation-fill-mode: both;
+}
+.slideInDown,
+.slideInDown-video {
+	-webkit-transform: translate3d(0, -100%, 0);
+	transform: translate3d(0, -100%, 0);
+	visibility: visible;
+	animation-fill-mode: both;
+}
+
+.slideInLeft,
+.slideInLeft-video {
+	-webkit-transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-100%, 0, 0);
+	visibility: visible;
+	animation-fill-mode: both;
+}
+.slideInRight,
+.slideInRight-video {
+	-webkit-transform: translate3d(100%, 0, 0);
+	transform: translate3d(100%, 0, 0);
+	visibility: visible;
+	animation-fill-mode: both;
+}
+
+.zoomIn,
+.zoomIn-video {
+	opacity: 0;
+	-webkit-transform: scale3d(0.3, 0.3, 0.3);
+	transform: scale3d(0.3, 0.3, 0.3);
+	animation-fill-mode: forwards !important;
+	animation-fill-mode: both;
+}
+
+.zoomInDown,
+.zoomInDown-video {
+	opacity: 0;
+	transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+	animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+	animation-fill-mode: both;
+}
+.zoomInLeft,
+.zoomInLeft-video {
+	opacity: 0;
+	-webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+	transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+	-webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+	animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+	animation-fill-mode: both;
+}
+.zoomInRight,
+.zoomInRight-video {
+	opacity: 0;
+	-webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
+	transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
+	-webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+	animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+	animation-fill-mode: both;
+}
+
+.zoomInUp,
+.zoomInUp-video {
+	opacity: 0;
+	-webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+	transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+	-webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+	animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+	animation-fill-mode: both;
+}
+
+@keyframes fadeIn-prod {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.fadeIn-prod {
+	animation-name: fadeIn-prod;
+}
+
+.progress-bg {
+	width: 0px !important;
+}
+
+.animated.container-pop-up {
+	animation-duration: 0.7s;
+	animation-fill-mode: both;
+	animation-delay: 0.15s;
+}

