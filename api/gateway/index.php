@@ -26,7 +26,7 @@ header("Access-Control-Allow-Headers: Content-Type, Authorization");
 define('GHOST_SECRET_KEY', 'sk_live_Os3Eecd8G9jgt75ubIOuJeR82fXyfa2ElKFWrWsy3c3EXjLo'); // ex: sk_live_...
 define('GHOST_COMPANY_ID', 'db9ac3e5-c99b-476f-a454-6df8c06e2883'); // ex: db9ac3e5-...
 define('GHOST_BASE', 'https://api.ghostspaysv2.com/functions/v1');
-define('POSTBACK_BASE_URL', 'https://ttkrecursos.shop'); // ex: https://meusite.com
+define('POSTBACK_BASE_URL', 'https://recargajogo-delta.vercel.app'); // ex: https://meusite.com
 
 // local fallback Pix (se desejar)
 $LOCAL_PIX_KEY = 'SUA_CHAVE_PIX_AQUI';
@@ -402,4 +402,5 @@ if ($acao === 'simular') {
 http_response_code(400);
 echo json_encode(['erro'=>true,'mensagem'=>'Ação inválida']);
 exit;
+
 ?>
