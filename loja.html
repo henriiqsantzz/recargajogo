@@ -1240,18 +1240,14 @@ Política de privacidade
 
 <script>
 (function() {
-  // CONFIGURAÇÃO: Coloque aqui a URL exata onde você hospedou o arquivo PHP
-  const API_BASE = 'https://ttkrecursos.shop/api/gateway/index.php'; 
+  // --- CONFIGURAÇÃO OBRIGATÓRIA ---
+  // Coloque aqui o link EXATO do seu PHP na Hostinger
+  const API_BASE = 'https://SEU-SITE-NA-HOSTINGER.com/api/gateway/index.php'; 
   
-  // (Opcional) Mantenha o Supabase APENAS se ainda for usar para o rastreamento do TikTok (Events API)
-  // Caso contrário, as chamadas de analytics abaixo falharão silenciosamente.
-  const SUPABASE_URL = 'https://lyvzakuljyjmimqlcdhp.supabase.co';
-  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imx5dnpha3VsanlqbWltcWxjZGhwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc4MTEzMzksImV4cCI6MjA4MzM4NzMzOX0.bacukrok8dV5M-8pEJx4ZgRBR9Ajq_-Uz9G1cTiy5Rs';
-  
+  // Variáveis Globais
   let currentTransactionId = null;
   let pollingInterval = null;
   let currentProduct = null;
-  let currentCustomer = null;
 
   const products = [
     { diamonds: '5.600', price: 1990, priceDisplay: 'R$ 19,90', bonus: '1.120', itemTitle: 'Bilhetes Free - 5.600' },
@@ -1259,38 +1255,31 @@ Política de privacidade
     { diamonds: '22.400', price: 5990, priceDisplay: 'R$ 59,90', bonus: '4.480', itemTitle: 'Bilhetes Free - 22.400' }
   ];
 
-  // Máscara CPF
+  // --- MÁSCARAS DE INPUT ---
   document.getElementById('pix-cpf').addEventListener('input', function(e) {
-    let value = e.target.value.replace(/\D/g, '');
-    if (value.length > 11) value = value.slice(0, 11);
-    if (value.length > 9) {
-      value = value.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
-    } else if (value.length > 6) {
-      value = value.replace(/(\d{3})(\d{3})(\d{1,3})/, '$1.$2.$3');
-    } else if (value.length > 3) {
-      value = value.replace(/(\d{3})(\d{1,3})/, '$1.$2');
-    }
-    e.target.value = value;
+    let v = e.target.value.replace(/\D/g, '');
+    if(v.length > 11) v = v.slice(0, 11);
+    if(v.length > 9) v = v.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
+    else if(v.length > 6) v = v.replace(/(\d{3})(\d{3})(\d{1,3})/, '$1.$2.$3');
+    else if(v.length > 3) v = v.replace(/(\d{3})(\d{1,3})/, '$1.$2');
+    e.target.value = v;
   });
 
-  // Máscara WhatsApp
   document.getElementById('pix-whatsapp').addEventListener('input', function(e) {
-    let value = e.target.value.replace(/\D/g, '');
-    if (value.length > 11) value = value.slice(0, 11);
-    if (value.length > 6) {
-      value = value.replace(/(\d{2})(\d{5})(\d{0,4})/, '($1) $2-$3');
-    } else if (value.length > 2) {
-      value = value.replace(/(\d{2})(\d{0,5})/, '($1) $2');
-    }
-    e.target.value = value;
+    let v = e.target.value.replace(/\D/g, '');
+    if(v.length > 11) v = v.slice(0, 11);
+    if(v.length > 6) v = v.replace(/(\d{2})(\d{5})(\d{0,4})/, '($1) $2-$3');
+    else if(v.length > 2) v = v.replace(/(\d{2})(\d{0,5})/, '($1) $2');
+    e.target.value = v;
   });
 
-  // Abrir Modal
-  window.openPixModal = function(productIndex) { // Tornei global caso precise chamar via onclick inline
-    currentProduct = products[productIndex];
+  // --- ABRIR MODAL ---
+  window.openPixModal = function(index) {
+    currentProduct = products[index];
     document.getElementById('modal-product-info').innerHTML = 
       `💎 ${currentProduct.diamonds} Diamantes + ${currentProduct.bonus} Bônus<br><strong style="font-size: 18px; color: #00e676;">${currentProduct.priceDisplay}</strong>`;
     
+    // Reseta visual
     document.getElementById('step-form').style.display = 'block';
     document.getElementById('step-pix').style.display = 'none';
     document.getElementById('step-success').style.display = 'none';
@@ -1301,142 +1290,99 @@ Política de privacidade
     document.getElementById('pix-whatsapp').value = '';
     
     document.getElementById('pix-modal').style.display = 'flex';
-    
-    // Tenta disparar evento do TikTok (Mantive via Supabase conforme original, ou remova se não usar)
-    try {
-        var tiktokParams = window.getTikTokParams ? window.getTikTokParams() : {};
-        var checkoutEventId = 'checkout_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
-        
-        // Client-side pixel backup
-        if (typeof ttq !== 'undefined') {
-            ttq.track('InitiateCheckout', {
-                content_type: 'product',
-                content_id: currentProduct.itemTitle,
-                content_name: currentProduct.itemTitle,
-                quantity: 1,
-                value: currentProduct.price / 100,
-                currency: 'BRL'
-            }, {
-                event_id: checkoutEventId,
-                ttclid: tiktokParams.ttclid || undefined
-            });
-        }
-    } catch (e) { console.log('Erro tracking', e); }
   }
 
-  // Fechar Modal
   function closeModal() {
     document.getElementById('pix-modal').style.display = 'none';
-    if (pollingInterval) {
-      clearInterval(pollingInterval);
-      pollingInterval = null;
-    }
+    if(pollingInterval) clearInterval(pollingInterval);
   }
 
   document.getElementById('close-modal').addEventListener('click', closeModal);
   document.getElementById('close-success-btn').addEventListener('click', closeModal);
-  document.getElementById('pix-modal').addEventListener('click', function(e) {
-    if (e.target === this) closeModal();
-  });
 
-  // --- AÇÃO DE GERAR PIX (MODIFICADO PARA API PHP) ---
+  // --- FUNÇÃO INTELIGENTE PARA LIMPAR O PIX ---
+  // Essa função resolve o problema do [object Object]
+  function limparPixCode(raw) {
+      if (!raw) return null;
+      if (typeof raw === 'string') return raw; // Se já for texto, retorna
+      
+      // Se for objeto, procura o campo certo
+      if (typeof raw === 'object') {
+          console.log('Detectado objeto Pix:', raw);
+          return raw.qrcode || raw.payload || raw.emv || raw.qr || raw.code || raw.copiaCola || JSON.stringify(raw);
+      }
+      return String(raw);
+  }
+
+  // --- BOTÃO GERAR PIX ---
   document.getElementById('generate-pix-btn').addEventListener('click', async function() {
     const name = document.getElementById('pix-name').value.trim();
     const cpf = document.getElementById('pix-cpf').value.replace(/\D/g, '');
     const whatsapp = document.getElementById('pix-whatsapp').value.replace(/\D/g, '');
     const errorEl = document.getElementById('form-error');
 
-    if (!name || name.length < 3) {
-      errorEl.textContent = 'Por favor, insira seu nome completo';
+    if (name.length < 3 || cpf.length !== 11 || whatsapp.length < 10) {
+      errorEl.textContent = 'Preencha todos os dados corretamente.';
       errorEl.style.display = 'block';
       return;
     }
-    if (cpf.length !== 11) {
-      errorEl.textContent = 'Por favor, insira um CPF válido';
-      errorEl.style.display = 'block';
-      return;
-    }
-    if (whatsapp.length < 10 || whatsapp.length > 11) {
-      errorEl.textContent = 'Por favor, insira um WhatsApp válido';
-      errorEl.style.display = 'block';
-      return;
-    }
-    
-    // Email gerado automaticamente
-    const firstName = name.split(' ')[0].toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-    const randomEmail = firstName + '@diamantes.com';
 
     errorEl.style.display = 'none';
     this.disabled = true;
-    this.textContent = 'Gerando PIX...';
-
-    // Captura parâmetros de URL (UTM, etc)
-    const urlParams = new URLSearchParams(window.location.search);
+    this.textContent = 'Aguarde...';
 
     try {
-      // Prepara dados para o PHP (x-www-form-urlencoded para funcionar com $_REQUEST)
-      const formData = new URLSearchParams();
-      formData.append('acao', 'criar');
-      formData.append('valor', currentProduct.price / 100); // Converte 1990 cents para 19.90
-      formData.append('nome', name);
-      formData.append('email', randomEmail);
-      formData.append('cpf', cpf);
-      formData.append('telefone', whatsapp);
-      formData.append('itemTitle', currentProduct.itemTitle); // Opcional, o PHP não usa mas pode ser útil salvar
-      
-      // Passa UTMs se existirem
-      if(urlParams.get('utm_source')) formData.append('utm', urlParams.toString());
+      // Prepara os dados no formato que o PHP entende (Form Data)
+      const params = new URLSearchParams();
+      params.append('acao', 'criar');
+      params.append('valor', currentProduct.price / 100); // Envia 19.90
+      params.append('nome', name);
+      params.append('email', name.split(' ')[0].toLowerCase() + '@diamantes.com');
+      params.append('cpf', cpf);
+      params.append('telefone', whatsapp);
+
+      console.log('Enviando para:', API_BASE); // Debug no Console (F12)
 
       const response = await fetch(API_BASE, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        body: formData
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: params
       });
 
+      if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
+
       const data = await response.json();
+      console.log('Resposta do Servidor:', data); // VEJA ISSO NO CONSOLE F12
 
-      if (data.erro) {
-        throw new Error(data.mensagem || 'Erro ao gerar PIX');
-      }
+      if (data.erro) throw new Error(data.mensagem || 'Erro na API');
 
-      // O PHP retorna 'payment_id' e 'pixCode'
-      if (!data.pixCode) {
-        throw new Error('Código PIX não retornado pelo gateway.');
+      // AQUI ESTÁ A CORREÇÃO DO "OBJECT OBJECT"
+      // Usamos a função auxiliar para extrair apenas o texto
+      const pixCodeFinal = limparPixCode(data.pixCode);
+
+      if (!pixCodeFinal || pixCodeFinal.length < 10) {
+          throw new Error('Código Pix inválido recebido.');
       }
 
       currentTransactionId = data.payment_id;
-      
-      // Salvar dados cliente
-      currentCustomer = {
-        name: name,
-        email: randomEmail,
-        phone: whatsapp,
-        cpf: cpf
-      };
-      
-      const pixCode = data.pixCode;
-      
-      // Mostrar etapa do PIX
+
+      // Atualiza a tela com o código LIMPO
       document.getElementById('step-form').style.display = 'none';
       document.getElementById('step-pix').style.display = 'block';
       
-      // Texto do PIX
-      document.getElementById('pix-code').textContent = pixCode;
+      const codeElement = document.getElementById('pix-code');
+      codeElement.textContent = pixCodeFinal; // Agora é texto, não objeto
       
-      // QR Code Imagem
-      if (pixCode) {
-        const qrImageUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(pixCode)}`;
-        document.getElementById('pix-qr-image').src = qrImageUrl;
-      }
+      // Gera QR Code
+      const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(pixCodeFinal)}`;
+      document.getElementById('pix-qr-image').src = qrUrl;
 
-      // Inicia verificação de status
+      // Inicia verificação de pagamento
       startPolling();
 
     } catch (error) {
-      console.error('Error:', error);
-      errorEl.textContent = error.message || 'Erro ao processar pagamento. Tente novamente.';
+      console.error(error);
+      errorEl.textContent = 'Erro: ' + error.message;
       errorEl.style.display = 'block';
     } finally {
       this.disabled = false;
@@ -1444,7 +1390,7 @@ Política de privacidade
     }
   });
 
-  // Copiar código
+  // --- BOTÃO COPIAR ---
   document.getElementById('copy-pix-btn').addEventListener('click', function() {
     const code = document.getElementById('pix-code').textContent;
     navigator.clipboard.writeText(code).then(() => {
@@ -1453,67 +1399,42 @@ Política de privacidade
     });
   });
 
-  // --- VERIFICAÇÃO DE STATUS (MODIFICADO PARA API PHP) ---
+  // --- VERIFICAR PAGAMENTO ---
   function startPolling() {
     if (pollingInterval) clearInterval(pollingInterval);
     
     pollingInterval = setInterval(async () => {
       try {
-        const formData = new URLSearchParams();
-        formData.append('acao', 'verificar');
-        formData.append('payment_id', currentTransactionId);
+        const params = new URLSearchParams();
+        params.append('acao', 'verificar');
+        params.append('payment_id', currentTransactionId);
 
-        const response = await fetch(API_BASE, {
-          method: 'POST',
-          headers: {
-             'Content-Type': 'application/x-www-form-urlencoded'
-          },
-          body: formData
+        const res = await fetch(API_BASE, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: params
         });
-
-        const data = await response.json();
-
-        // O PHP mapeia 'paid' para 'approved'
+        const data = await res.json();
+        
         if (data.status === 'approved' || data.status === 'paid') {
-          clearInterval(pollingInterval);
-          pollingInterval = null;
-          
-          // --- Disparo de Conversão TikTok ---
-          if (currentProduct) {
-            try {
-                // Tenta pegar ttclid
-                var urlParams = new URLSearchParams(window.location.search);
-                var ttclid = urlParams.get('ttclid') || null;
-                
-                // Client-side pixel
-                if (typeof ttq !== 'undefined') {
-                  ttq.track('CompletePayment', {
-                    content_type: 'product',
-                    content_id: currentProduct.itemTitle,
-                    content_name: currentProduct.itemTitle,
-                    quantity: 1,
-                    price: currentProduct.price / 100,
-                    value: currentProduct.price / 100,
-                    currency: 'BRL'
-                  }, {
-                    event_id: currentTransactionId,
-                    ttclid: ttclid || undefined
-                  });
-                }
-            } catch(e) { console.error('Erro pixel tiktok', e); }
-          }
-          
-          // Mostrar sucesso
-          document.getElementById('step-pix').style.display = 'none';
-          document.getElementById('step-success').style.display = 'block';
+            clearInterval(pollingInterval);
+            document.getElementById('step-pix').style.display = 'none';
+            document.getElementById('step-success').style.display = 'block';
+            
+            // Aqui você pode disparar o evento do TikTok/Facebook Pixel
+            if(typeof ttq !== 'undefined') {
+                ttq.track('CompletePayment', { 
+                    value: currentProduct.price/100, 
+                    currency: 'BRL', 
+                    content_id: currentProduct.itemTitle 
+                });
+            }
         }
-      } catch (error) {
-        console.error('Polling error:', error);
-      }
-    }, 5000); // Verifica a cada 5 segundos
+      } catch (e) { console.error('Polling...', e); }
+    }, 4000);
   }
 
-  // Anexar aos botões de compra (Seletores de classe)
+  // --- EVENTOS DOS BOTÕES DE COMPRA ---
   document.querySelectorAll('.btn.g-rqYoKh0, .btn.g-WPJ918P, .btn.g-Bs6g6jS').forEach((btn, index) => {
     btn.href = '#';
     btn.addEventListener('click', function(e) {
@@ -1521,6 +1442,7 @@ Política de privacidade
       openPixModal(index);
     });
   });
+
 })();
 </script>
 
